@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<MarketData enable="true">
+		<tcpto addr="127.0.0.1:9800"/>
+		<login id="50B" password="abc123" identify="LPMarketData" username="CFHMARKETDATA"/>
+		<fixcon pathname="marketdata.ini"/>
+		<cache pathname="cache/marketdata.map"/>
+	</MarketData>
+	<TradeOrder enable="true">
+		<tcpto addr="127.0.0.1:9800"/>
+		<login id="60B" password="abc123" identify="LPTradeOrder" username="CFHTRADEORDER"/>
+		<fixcon pathname="tradeorder.ini"/>
+		<cache pathname="cache/tradeorder.map"/>
+	</TradeOrder>
+	<obj>
+		<!--***************-->
+		<api path="C:/c.object.setup/shared.api/"/>
+		<!--***************-->
+		<productssrc pathname="products.csv"/>
+	</obj>
+</setup>

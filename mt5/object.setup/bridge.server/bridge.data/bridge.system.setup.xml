@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<SystemPlatformMode>1</SystemPlatformMode>
+	<TimeoutDealerOrder>30000</TimeoutDealerOrder>
+	<TimeoutQuoteActive>300000</TimeoutQuoteActive>
+	<DealerOrdType>1</DealerOrdType>
+	<DealerOrdTimeInForce>3</DealerOrdTimeInForce>
+	<AggregateQuoteSwitch>1</AggregateQuoteSwitch>
+	<DealerTradePxType>2</DealerTradePxType>
+	<AutoAdjustPositionSwitch>0</AutoAdjustPositionSwitch>
+	<SystemOrderMode>1</SystemOrderMode>
+	<FeederSpreadMode>1</FeederSpreadMode>
+	<DealerContinueToRequestDelay>3000</DealerContinueToRequestDelay>
+	<DealerContinueToRequestSwitch>1</DealerContinueToRequestSwitch>
+	<DevelopDebugSwitch>0</DevelopDebugSwitch>
+	<AssignLogins>
+	</AssignLogins>
+	<SystemOperatingTimePeriod>
+		<TimePeriod wday="0" begin="0" end="0"/>
+		<TimePeriod wday="1" begin="0" end="90060"/>
+		<TimePeriod wday="2" begin="0" end="90060"/>
+		<TimePeriod wday="3" begin="0" end="90060"/>
+		<TimePeriod wday="4" begin="0" end="90060"/>
+		<TimePeriod wday="5" begin="0" end="90060"/>
+		<TimePeriod wday="6" begin="0" end="0"/>
+	</SystemOperatingTimePeriod>
+</setup>

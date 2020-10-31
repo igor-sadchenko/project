@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="Fields.xsd" generated="2006-05-08T17:42:59">
+  <Fields>
+    <Tag>1</Tag>
+    <FieldName>Account</FieldName>
+    <Type>String</Type>
+    <Desc>Account mnemonic as agreed between buy and sell sides, e.g. broker and institution or investor/intermediary and fund manager.
+</Desc>
+    <AbbrName>Acct</AbbrName>
+    <OverrideXMLName>Acct</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>6</Tag>
+    <FieldName>AvgPx</FieldName>
+    <Type>Price</Type>
+    <Desc>Not supported by LMAX - always 0</Desc>123
+    <AbbrName>AvgPx</AbbrName>
+    <OverrideXMLName>AvgPx</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>7</Tag>
+    <FieldName>BeginSeqNo</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>Message sequence number of first message in range to be resent</Desc>
+    <AbbrName>BeginSeqNo</AbbrName>
+    <OverrideXMLName>BeginSeqNo</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>8</Tag>
+    <FieldName>BeginString</FieldName>
+    <Type>String</Type>
+    <Desc>Identifies beginning of new message and protocol version. ALWAYS FIRST FIELD IN MESSAGE. (Always unencrypted).
+
+Valid values:
+ * FIX.4.4</Desc>
+    <AbbrName>BeginString</AbbrName>
+    <OverrideXMLName>BeginString</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>9</Tag>
+    <FieldName>BodyLength</FieldName>
+    <Type>Length</Type>
+    <Desc>Message length, in bytes, forward to the CheckSum field. ALWAYS SECOND FIELD IN MESSAGE. (Always unencrypted)</Desc>
+    <AbbrName>BodyLength</AbbrName>
+    <OverrideXMLName>BodyLength</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>10</Tag>
+    <FieldName>CheckSum</FieldName>
+    <Type>String</Type>
+    <Desc>Three byte, simple checksum  (see Volume 2: “Checksum Calculation” for description). ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing &lt;SOH&gt;, as the end-of-message delimiter.  Always defined as three characters. (Always unencrypted)</Desc>
+    <AbbrName>CheckSum</AbbrName>
+    <OverrideXMLName>CheckSum</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>16</Tag>
+    <FieldName>EndSeqNo</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>Message sequence number of last message in range to be resent.  If request is for a single message BeginSeqNo (7) = EndSeqNo.  If request is for all messages subsequent to a particular message, EndSeqNo = “0” (representing infinity).</Desc>
+    <AbbrName>EndSeqNo</AbbrName>
+    <OverrideXMLName>EndSeqNo</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>22</Tag>
+    <FieldName>SecurityIDSource</FieldName>
+    <Type>String</Type>
+    <Desc>Identifies class or source of the SecurityID (48) value.  Required if SecurityID is specified.
+LMAX Supported values are:
+  8 = Exchange Symbol</Desc>
+    <AbbrName>IDSrc</AbbrName>
+    <OverrideXMLName>Src</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>34</Tag>
+    <FieldName>MsgSeqNum</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>Integer message sequence number.</Desc>
+    <AbbrName>SeqNum</AbbrName>
+    <OverrideXMLName>SeqNum</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>35</Tag>
+    <FieldName>MsgType</FieldName>
+    <Type>String</Type>
+    <Desc>Defines message type    ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)
+Valid values:  *** Note the use of lower case letters ***
+  0 = Heartbeat
+  1 = Test Request
+  2 = Resend Request
+  3 = Reject
+  4 = Sequence Reset
+  5 = Logout
+  A = Logon
+  V = Market Data Request
+  W = Market Data-Snapshot/Full Refresh
+  Y = Market Data Request Reject</Desc>
+    <AbbrName>MsgTyp</AbbrName>
+    <OverrideXMLName>MsgTyp</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>36</Tag>
+    <FieldName>NewSeqNo</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>New sequence number
+</Desc>
+    <AbbrName>NewSeqNo</AbbrName>
+    <OverrideXMLName>NewSeqNo</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>43</Tag>
+    <FieldName>PossDupFlag</FieldName>
+    <Type>Boolean</Type>
+    <Desc>Indicates possible retransmission of message with this sequence number
+Valid values:
+  Y = Possible duplicate
+  N = Original transmission
+</Desc>
+    <AbbrName>PosDup</AbbrName>
+    <OverrideXMLName>PosDup</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>45</Tag>
+    <FieldName>RefSeqNum</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>Reference message sequence number 
+</Desc>
+    <AbbrName>RefSeqNum</AbbrName>
+    <OverrideXMLName>RefSeqNum</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>48</Tag>
+    <FieldName>SecurityID</FieldName>
+    <Type>String</Type>
+    <Desc>LMAX Security identifier. Requires SecurityIDSource=8. 
+</Desc>
+    <AbbrName>ID</AbbrName>
+    <OverrideXMLName>ID</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>49</Tag>
+    <FieldName>SenderCompID</FieldName>
+    <Type>String</Type>
+    <Desc>Assigned value used to identify firm sending message.
+</Desc>
+    <AbbrName>SID</AbbrName>
+    <OverrideXMLName>SID</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>52</Tag>
+    <FieldName>SendingTime</FieldName>
+    <Type>UTCTimestamp</Type>
+    <Desc>Time of message transmission (always expressed in UTC (Universal Time Coordinated, also known as “GMT”)
+</Desc>
+    <AbbrName>SndgTm</AbbrName>
+    <OverrideXMLName>Snt</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>56</Tag>
+    <FieldName>TargetCompID</FieldName>
+    <Type>String</Type>
+    <Desc>Assigned value used to identify receiving firm.
+</Desc>
+    <AbbrName>TID</AbbrName>
+    <OverrideXMLName>TID</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>58</Tag>
+    <FieldName>Text</FieldName>
+    <Type>String</Type>
+    <Desc>Free format text string (Note: this field does not have a specified maximum length)
+</Desc>
+    <AbbrName>Txt</AbbrName>
+    <OverrideXMLName>Txt</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>89</Tag>
+    <FieldName>Signature</FieldName>
+    <Type>data</Type>
+    <Desc>Electronic signature
+</Desc>
+    <AbbrName>Signature</AbbrName>
+    <OverrideXMLName>Signature</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>93</Tag>
+    <FieldName>SignatureLength</FieldName>
+    <Type>Length</Type>
+    <Desc>Number of bytes in signature field.
+</Desc>
+    <LenRefers>89</LenRefers>
+    <AbbrName>SignatureLength</AbbrName>
+    <OverrideXMLName>SignatureLength</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>95</Tag>
+    <FieldName>RawDataLength</FieldName>
+    <Type>Length</Type>
+    <Desc>Number of bytes in raw data field.
+</Desc>
+    <LenRefers>96</LenRefers>
+    <AbbrName>RawDataLength</AbbrName>
+    <OverrideXMLName>RawDataLength</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>96</Tag>
+    <FieldName>RawData</FieldName>
+    <Type>data</Type>
+    <Desc>Unformatted raw data, can include bitmaps, word processor documents, etc.
+</Desc>
+    <AbbrName>RawData</AbbrName>
+    <OverrideXMLName>RawData</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>97</Tag>
+    <FieldName>PossResend</FieldName>
+    <Type>Boolean</Type>
+    <Desc>Indicates that message may contain information that has been sent under another sequence number.
+Valid Values:
+ Y=Possible resend
+ N=Original transmission
+ 
+LMAX will never populate this tag with any value other than 'N' on messages sent by LMAX.
+LMAX will ignore this tag on any messages received by LMAX and the treat the message as having been sent with PossResend='N'.
+</Desc>
+    <AbbrName>PosRsnd</AbbrName>
+    <OverrideXMLName>PosRsnd</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>98</Tag>
+    <FieldName>EncryptMethod</FieldName>
+    <Type>int</Type>
+    <Desc>Method of encryption.
+Valid values:
+  0 = None / other
+
+LMAX does not support encryption at the FIX layer. All messages are sent over an SSL encrypted connection. Supported values:</Desc>
+    <AbbrName>EncryptMethod</AbbrName>
+    <OverrideXMLName>EncryptMethod</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>108</Tag>
+    <FieldName>HeartBtInt</FieldName>
+    <Type>int</Type>
+    <Desc>Heartbeat interval (seconds) 
+</Desc>
+    <AbbrName>HeartBtInt</AbbrName>
+    <OverrideXMLName>HeartBtInt</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>112</Tag>
+    <FieldName>TestReqID</FieldName>
+    <Type>String</Type>
+    <Desc>Identifier included in Test Request message to be returned in resulting Heartbeat
+</Desc>
+    <AbbrName>TestReqID</AbbrName>
+    <OverrideXMLName>TestReqID</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>122</Tag>
+    <FieldName>OrigSendingTime</FieldName>
+    <Type>UTCTimestamp</Type>
+    <Desc>Original time of message transmission (always expressed in UTC (Universal Time Coordinated, also known as “GMT”) when transmitting orders as the result of a resend request.
+</Desc>
+    <AbbrName>OrigSndTm</AbbrName>
+    <OverrideXMLName>OrigSnt</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>123</Tag>
+    <FieldName>GapFillFlag</FieldName>
+    <Type>Boolean</Type>
+    <Desc>Indicates that the Sequence Reset message is replacing administrative or application messages which will not be resent.
+Valid values:
+  Y = Gap Fill message, MsgSeqNum field valid
+  N = Sequence Reset, ignore MsgSeqNum
+</Desc>
+    <AbbrName>GapFillFlag</AbbrName>
+    <OverrideXMLName>GapFillFlag</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>141</Tag>
+    <FieldName>ResetSeqNumFlag</FieldName>
+    <Type>Boolean</Type>
+    <Desc>Indicates that the both sides of the FIX session should reset sequence numbers.
+Valid values:
+  Y = Yes, reset sequence numbers
+  N = No
+</Desc>
+    <AbbrName>ResetSeqNumFlag</AbbrName>
+    <OverrideXMLName>ResetSeqNumFlag</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>146</Tag>
+    <FieldName>NoRelatedSym</FieldName>
+    <Type>NumInGroup</Type>
+    <Desc>Specifies the number of repeating symbols specified.
+  </Desc>
+    <AbbrName>NoReltdSym</AbbrName>
+    <OverrideXMLName>NoReltdSym</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>262</Tag>
+    <FieldName>MDReqID</FieldName>
+    <Type>String</Type>
+    <Desc>Unique identifier for Market Data Request. MDReqId is restricted to a maximum of 16 lowercase hexadecimal characters [0123456789abcdef] with no leading 0 characters (this is a positive 64bit number represented in hexadecimal excluding 0).
+      
+Must be unique for all current Market Data Requests. If a new Market Data Request (excluding unsubscribtion requests) is received with the same MDReqId as a current Market Data Request then the new request will be rejected as a duplicate.</Desc>
+    <AbbrName>ReqID</AbbrName>
+    <OverrideXMLName>ReqID</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>263</Tag>
+    <FieldName>SubscriptionRequestType</FieldName>
+    <Type>char</Type>
+    <Desc>Subscription Request Type
+  Valid values:
+      0 = Snapshot;
+      1 = Snapshot + Updates (Subscribe);
+      2 = Disable previous Snapshot + Update Request (Unsubscribe);
+</Desc>
+    <AbbrName>SubReqTyp</AbbrName>
+    <OverrideXMLName>SubReqTyp</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>264</Tag>
+    <FieldName>MarketDepth</FieldName>
+    <Type>int</Type>
+    <Desc>Depth of market for Book Snapshot
+LMAX supported values:
+  0 = Full Depth (LMAX supports a maximum of 20 levels of depth)
+  1 = Top of Book
+  2-20 = Report best N price tiers of data, up to 20 levels.
+</Desc>
+    <AbbrName>MktDepth</AbbrName>
+    <OverrideXMLName>MktDepth</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>265</Tag>
+    <FieldName>MDUpdateType</FieldName>
+    <Type>int</Type>
+    <Desc>Specifies the type of Market Data update.
+LMAX supported values:
+  0 = Full Refresh
+</Desc>
+    <AbbrName>UpdtTyp</AbbrName>
+    <OverrideXMLName>UpdtTyp</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>267</Tag>
+    <FieldName>NoMDEntryTypes</FieldName>
+    <Type>NumInGroup</Type>
+    <Desc>Number of MDEntryType (269) fields requested.
+      </Desc>
+    <AbbrName>NoMDEntryTyps</AbbrName>
+    <OverrideXMLName>NoMDEntryTyps</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>268</Tag>
+    <FieldName>NoMDEntries</FieldName>
+    <Type>NumInGroup</Type>
+    <Desc>Number of entries in Market Data message.
+      </Desc>
+    <AbbrName>NoMDEntries</AbbrName>
+    <OverrideXMLName>NoMDEntries</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>269</Tag>
+    <FieldName>MDEntryType</FieldName>
+    <Type>char</Type>
+    <Desc>Type  Market Data entry.
+LMAX supported values:
+  0 = Bid
+  1 = Offer
+</Desc>
+    <AbbrName>Typ</AbbrName>
+    <OverrideXMLName>Typ</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>270</Tag>
+    <FieldName>MDEntryPx</FieldName>
+    <Type>Price</Type>
+    <Desc>Price of the Market Data Entry.</Desc>
+    <AbbrName>Px</AbbrName>
+    <OverrideXMLName>Px</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>271</Tag>
+    <FieldName>MDEntrySize</FieldName>
+    <Type>Qty</Type>
+    <Desc>Quantity or volume represented by the Market Data Entry.</Desc>
+    <AbbrName>Sz</AbbrName>
+    <OverrideXMLName>Sz</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>272</Tag>
+    <FieldName>MDEntryDate</FieldName>
+    <Type>UTCDateOnly</Type>
+    <Desc>Date of Market Data Entry.</Desc>
+    <AbbrName>Dt</AbbrName>
+    <OverrideXMLName>Dt</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>273</Tag>
+    <FieldName>MDEntryTime</FieldName>
+    <Type>UTCTimeOnly</Type>
+    <Desc>Time of Market Data Entry.</Desc>
+    <AbbrName>Tm</AbbrName>
+    <OverrideXMLName>Tm</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>281</Tag>
+    <FieldName>MDReqRejReason</FieldName>
+    <Type>char</Type>
+    <Desc>Reason for the rejection of a Market Data request.
+Valid values:
+  0 = Unknown symbol
+  1 = Duplicate MDReqID
+  2 = Insufficient Bandwidth
+  3 = Insufficient Permissions
+  4 = Unsupported SubscriptionRequestType
+  5 = Unsupported MarketDepth
+  6 = Unsupported MDUpdateType
+  7 = Unsupported AggregatedBook
+  8 = Unsupported MDEntryType
+  9 = Unsupported TradingSessionID
+  A = Unsupported Scope
+  B = Unsupported OpenCloseSettleFlag
+  C = Unsupported MDImplicitDelete</Desc>
+<AbbrName>ReqRejResn</AbbrName>
+<OverrideXMLName>ReqRejResn</OverrideXMLName>
+<NotReqXML>0</NotReqXML>
+</Fields>
+  
+  <Fields>
+    <Tag>354</Tag>
+    <FieldName>EncodedTextLen</FieldName>
+    <Type>Length</Type>
+    <Desc>Unused by LMAX. Byte length of encoded (non-ASCII characters) EncodedText (355) field.</Desc>
+    <LenRefers>355</LenRefers>
+    <AbbrName>EncTxtLen</AbbrName>
+    <OverrideXMLName>EncTxtLen</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>355</Tag>
+    <FieldName>EncodedText</FieldName>
+    <Type>data</Type>
+    <Desc>Unused by LMAX. Encoded (non-ASCII characters) representation of the Text (58) field in the encoded format specified via the MessageEncoding (347) field. If used, the ASCII (English) representation should also be specified in the Text field.</Desc>
+    <AbbrName>EncTxt</AbbrName>
+    <OverrideXMLName>EncTxt</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>371</Tag>
+    <FieldName>RefTagID</FieldName>
+    <Type>int</Type>
+    <Desc>The tag number of the FIX field being referenced.
+</Desc>
+    <AbbrName>RefTagID</AbbrName>
+    <OverrideXMLName>RefTagID</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>372</Tag>
+    <FieldName>RefMsgType</FieldName>
+    <Type>String</Type>
+    <Desc>The MsgType (35) of the FIX message being referenced.
+</Desc>
+    <AbbrName>RefMsgTyp</AbbrName>
+    <OverrideXMLName>RefMsgTyp</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>373</Tag>
+    <FieldName>SessionRejectReason</FieldName>
+    <Type>int</Type>
+    <Desc>Code to identify reason for a session-level Reject message.
+Valid values:
+  0 = Invalid tag number
+  1 = Required tag missing
+  2 = Tag not defined for this message type
+  3 = Undefined Tag
+  4 = Tag specified without a value
+  5 = Value is incorrect (out of range) for this tag
+  6 = Incorrect data format for value
+  7 = Decryption problem
+  8 = Signature problem
+  9 = CompID problem
+  10 = SendingTime accuracy problem
+  11 = Invalid MsgType
+  12 = XML Validation error
+  13 = Tag appears more than once
+  14 = Tag specified out of required order 
+  15 = Repeating group fields out of order
+  16 = Incorrect NumInGroup count for repeating group
+  17 = Non “data” value includes field delimiter (SOH character) 
+  99 = Other
+</Desc>
+    <AbbrName>SessRejRsn</AbbrName>
+    <OverrideXMLName>SessRejRsn</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>383</Tag>
+    <FieldName>MaxMessageSize</FieldName>
+    <Type>Length</Type>
+    <Desc>Maximum number of bytes supported for a single message.</Desc>
+    <AbbrName>MaxMsgSz</AbbrName>
+    <OverrideXMLName>MaxMsgSz</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>384</Tag>
+    <FieldName>NoMsgTypes</FieldName>
+    <Type>NumInGroup</Type>
+    <Desc>Number of MsgTypes (35) in repeating group.
+</Desc>
+    <AbbrName>NoMsgTyps</AbbrName>
+    <OverrideXMLName>NoMsgTyps</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>385</Tag>
+    <FieldName>MsgDirection</FieldName>
+    <Type>char</Type>
+    <Desc>Specifies the direction of the messsage.
+Valid values:
+S = Send
+R = Receive
+</Desc>
+    <AbbrName>MsgDirctn</AbbrName>
+    <OverrideXMLName>MsgDirctn</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>464</Tag>
+    <FieldName>TestMessageIndicator</FieldName>
+    <Type>Boolean</Type>
+    <Desc>Not supported by LMAX.</Desc>
+    <AbbrName>TestMsgInd</AbbrName>
+    <OverrideXMLName>TestMsgInd</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>553</Tag>
+    <FieldName>Username</FieldName>
+    <Type>String</Type>
+    <Desc>LMAX username. <b>This is required on the login message sent by the client</b></Desc>
+    <AbbrName>Username</AbbrName>
+    <OverrideXMLName>Username</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>554</Tag>
+    <FieldName>Password</FieldName>
+    <Type>String</Type>
+    <Desc>LMAX Password or passphrase. <b>This is required on the login message sent by the client</b></Desc>
+    <AbbrName>Password</AbbrName>
+    <OverrideXMLName>Password</OverrideXMLName>
+    <NotReqXML>0</NotReqXML>
+  </Fields>
+  <Fields>
+    <Tag>789</Tag>
+    <FieldName>NextExpectedMsgSeqNum</FieldName>
+    <Type>SeqNum</Type>
+    <Desc>Not supported by LMAX.
+</Desc>
+    <AbbrName>NextExpectedMsgSeqNum</AbbrName>
+    <OverrideXMLName>NextExpectedMsgSeqNum</OverrideXMLName>
+    <NotReqXML>1</NotReqXML>
+  </Fields>
+</dataroot>

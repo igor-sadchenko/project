@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<VerticalLayout width="1072">
+		<HorizontalLayout>
+			<VerticalLayout width="400">
+				<List name="DEF_9CD12D041D24ED8D64E170F9A3A17391" header="show" bkcolor="#FF1E1E1E" vscrollbar="true" hscrollbar="false">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="符号" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="卖价" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="买价" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="点差" textcolor="#FFFFFFFF" width="50" align="center" textpadding="0,0,0,0" />
+					</ListHeader>
+				</List>
+			</VerticalLayout>
+			<Control width="10"/>
+			<VerticalLayout bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+				<Control height="5"/>
+				<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+					<Control/>
+					<Button name="DEF_AA940C6CDB6BEFC36FB6D931F852BCE8" width="100" text="刷新产品配置" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					<Control width="5"/>
+					<Button name="DEF_657D081C484CAFAAB1A6364E4997F51E" width="100" text="保存配置修改" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>				
+				</HorizontalLayout>
+				<Control height="5"/>
+				<HorizontalLayout height="30">
+					<Control width="5"/>
+					<Label height="20" text="系统产品映射关系/参数配置" textcolor="#FFFF0000" font="3" align="left"/>
+				</HorizontalLayout>
+				<Control height="5"/>
+				<List name="DEF_770A32C71E22FBBDD2C8F330C683FD55" header="hidden" bkcolor="#FF1E1E1E" vscrollbar="true" hscrollbar="false">
+				</List>
+				<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+					<Control width="5"/>
+					<Button name="DEF_AA940C6CDB6BEFC36FB6D931F852BCE8" width="100" text="刷新产品配置" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					<Control width="5"/>
+					<Button name="DEF_657D081C484CAFAAB1A6364E4997F51E" width="100" text="保存配置修改" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>				
+					<Control/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<system>
+	<manager address="127.0.0.1:443" password="abcd1234" login="9999" timeout="10000"/>
+</system>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout>
+		<Control width="10"/>
+		<VerticalLayout width="800">			
+			<!--系统平台模式-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="105" showhtml="true" text="<c #B22222><b>1、</b></c>系统平台模式" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_8949506871A4AF501EEA44A91D231E72" enabled="false" width="120" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="[STP]直接交易员" userdata="1"/>
+					<ListLabelElement text="[ECN]自动撮合成交" userdata="2"/>
+					<ListLabelElement text="[MTF]多边交易" userdata="4"/>
+					<ListLabelElement text="[MM]做市商" userdata="8" selected="true"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="200" showhtml="true" text="模式." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+			
+			<!--系统时间-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="90" showhtml="true" text="<c #B22222><b>2、</b></c>服务器时间" textcolor="#FFFFFFFF" align="left"/>
+				<Edit width="210" name="DEF_FC5908D5D9AC711A438DE33A445AE75E" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" nativebkcolor="#FF323232"/>	
+				<Control width="5"/>
+				<Button name="DEF_B4E29CD7BB8744ADF5238569204977C8" width="60" text="刷新" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+			</HorizontalLayout>
+			
+			<!--系统开关-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="130" showhtml="true" text="<c #B22222><b>3、</b></c>系统跟单业务开关" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_525F750119D4369C3CC0CB23614783FB" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="开启" userdata="0" selected="true"/>
+					<ListLabelElement text="关闭" userdata="1"/>
+				</Combo>
+			</HorizontalLayout>	
+			
+			<!--自动跟平业务开关-->
+			<Control height="10"/>
+			<HorizontalLayout height="20">
+				<Label width="220" showhtml="true" text="<c #B22222><b>4、</b></c>信号源不存在情况，该信号的跟随者" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_F7072A66618D6F9440D8F3B14DEC3AF3" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="平仓处理" userdata="0" selected="true"/>
+					<ListLabelElement text="不做处理" userdata="1"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="30" showhtml="true" text="延迟" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_78F4500AC347454745F26BCF801D9ED1" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="10 秒" userdata="10000" selected="true"/>
+					<ListLabelElement text="30 秒" userdata="300000" />
+					<ListLabelElement text="1 分钟" userdata="600000"/>
+					<ListLabelElement text="5 分钟" userdata="3000000"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="50" showhtml="true" text="执行." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+			
+			<!--补正SLTP检测时间间隔-->
+			<Control height="10"/>
+			<HorizontalLayout height="20">
+				<Label width="250" showhtml="true" text="<c #B22222><b>5、</b></c>信号源更新止损、止盈，该信号跟随者" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_44F4F7666CA819A5035B9991760FA43A" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="补正处理" userdata="0" selected="true"/>
+					<ListLabelElement text="不做处理" userdata="1"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="30" showhtml="true" text="延迟" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_6C6F9EC80A8E862B187D96A89E78A57A" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="10 秒" userdata="10000" selected="true"/>
+					<ListLabelElement text="30 秒" userdata="300000" />
+					<ListLabelElement text="1 分钟" userdata="600000"/>
+					<ListLabelElement text="5 分钟" userdata="3000000"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="50" showhtml="true" text="执行." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+			
+			<!--强跟选项-->
+			<Control height="10"/>
+			<HorizontalLayout height="20">
+				<Label width="78" showhtml="true" text="<c #B22222><b>6、</b></c>强跟选项" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_99A5A76BFDAF477B5A5A0500CFD9F0B1" width="70" enabled="true" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="重新跟单" userdata="0" />
+					<ListLabelElement text="追加跟单" userdata="1" selected="true"/>
+				</Combo>
+			</HorizontalLayout>
+
+
+			<!--快速功能-->
+			<Control height="20"/>	
+			<HorizontalLayout height="20">
+				<Label width="78" showhtml="true" text="<c #B22222><b>7、</b></c>快速功能" textcolor="#FFFFFFFF" align="left"/>
+				<Button name="DEF_D80A8B35D645F759822FFD3323A4E142" width="100" text="执行平台强跟" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+				<Control width="5"/>
+				<Button name="DEF_C4B66F52E3DF7AFEB306E763AF60C317" width="100" text="批量止盈开关" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+				<Control width="5"/>
+				<Button name="DEF_677FA9F19D6F1E87713EBB22B9C0456C" width="100" text="批量强跟开关" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>	
+				<Control width="5"/>
+				<Button name="DEF_1A4AF87E3C86E48D86C21564C2745DD2" width="100" text="批量跟单开关" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>				
+			</HorizontalLayout>
+			
+			<!--开发调试开关-->
+			<Control height="20"/>		
+			<HorizontalLayout height="20">			
+				<Label width="105" showhtml="true" text="<c #B22222><b>8、</b></c>开发调试模式" textcolor="#FFFFFFFF" align="left"/>
+				<Option name="DEF_6377042096DC8814BC20775A000A0559" text="启用" enabled="false" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'" group="DEF_CF867639CC53B2DB568F7D7D1CCE7B6E"/>
+				<Option name="DEF_0D56334536ED73507BDCCAA975D24F51" text="禁用" enabled="false" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'"  group="DEF_CF867639CC53B2DB568F7D7D1CCE7B6E" selected="true"/>												
+			</HorizontalLayout>
+			
+			<Control height="20"/>
+			<HorizontalLayout height="20">
+				<Control/>
+				<Button name="DEF_7C67F08158C0C564E126485C5427E9BE" width="100" text="确认修改" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+			</HorizontalLayout>
+			
+			
+
+		</VerticalLayout>
+
+	
+		<Control width="10"/>
+		<VerticalLayout>
+		</VerticalLayout>			
+	</HorizontalLayout>
+
+</Window>

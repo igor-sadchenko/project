@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout>
+		<VerticalLayout>
+			<List name="DEF_69F087E67D2D28F7B24D16DB549F9D7A" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+			</List>
+			<HorizontalLayout height="30" bordercolor="#FF3C3C3C" bordersize="1">
+				<Control/>
+				<Button name="DEF_A238AC461A665414D74F8BCEB3F764E9" width="100" text="清理日志" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>				
+			</HorizontalLayout>
+		</VerticalLayout>
+		<HorizontalLayout width="100">
+		</HorizontalLayout>
+	</HorizontalLayout>
+</Window>

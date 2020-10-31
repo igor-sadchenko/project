@@ -1,0 +1,1335 @@
+<?xml version="1.0"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="MsgContents.xsd" generated="2006-05-08T17:42:59">
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 0
+        </Description>
+		<MsgID>1</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>112</TagText>
+		<Reqd>0</Reqd>
+		<Description>Required when the heartbeat is the result of a Test Request message.</Description>
+		<MsgID>1</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>1</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 1
+        </Description>
+		<MsgID>2</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>112</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>2</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>2</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 2
+        </Description>
+		<MsgID>3</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>7</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>3</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>16</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>3</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>3</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 3
+        </Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>45</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgSeqNum of rejected message</Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>371</TagText>
+		<Reqd>0</Reqd>
+		<Description>The tag number of the FIX field being referenced.</Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>372</TagText>
+		<Reqd>0</Reqd>
+		<Description>The MsgType of the FIX message being referenced.</Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>373</TagText>
+		<Reqd>0</Reqd>
+		<Description>Code to identify reason for a session-level Reject message.</Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>6</Position>
+		<TagText>58</TagText>
+		<Reqd>0</Reqd>
+		<Description>Where possible, message to explain reason for rejection</Description>
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>9</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>4</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 4
+        </Description>
+		<MsgID>5</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>123</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>5</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>36</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>5</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>5</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 5
+        </Description>
+		<MsgID>6</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>58</TagText>
+		<Reqd>0</Reqd>
+		<Description>If LMAX logs out a client this may contain a text description for the reason for the logout.</Description>
+		<MsgID>6</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>6</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 8
+        </Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>37</TagText>
+		<Reqd>1</Reqd>
+		<Description>The unique identifier allocated by LMAX for the order whose execution is being reported.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>527</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>6</Position>
+		<TagText>11</TagText>
+		<Reqd>0</Reqd>
+		<Description>The client supplied identifier for the order whose execution is being reported.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>7</Position>
+		<TagText>41</TagText>
+		<Reqd>0</Reqd>
+		<Description>Conditionally required for response to an electronic Cancel or Cancel/Replace request (ExecType=PendingCancel, Replace, or Canceled). ClOrdID of the previous accepted order (NOT
+            the initial order of the day) when canceling or replacing an order.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>10</Position>
+		<TagText>790</TagText>
+		<Reqd>0</Reqd>
+		<Description>Required if responding to and if provided on the Order Status Request message. Echo back the value provided by the requester.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>26</Position>
+		<TagText>17</TagText>
+		<Reqd>1</Reqd>
+		<Description>The unique identifier allocated by LMAX Broker to the ExecutionReport message.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>28</Position>
+		<TagText>150</TagText>
+		<Reqd>1</Reqd>
+		<Description>Describes the type of execution being reported by this ExecutionReport message.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>29</Position>
+		<TagText>39</TagText>
+		<Reqd>1</Reqd>
+		<Description>Describes the current state of a chain of orders.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>31</Position>
+		<TagText>103</TagText>
+		<Reqd>0</Reqd>
+		<Description>For use with ExecType = 8 (Rejected). Contains the reason for the rejection.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>33</Position>
+		<TagText>1</TagText>
+		<Reqd>0</Reqd>
+		<Description>Contains the LMAX Account Id for the account on which the order was placed.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>43</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "Instrument" (symbology) fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>47</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>50</Position>
+		<TagText>OrderQtyData</TagText>
+		<Reqd>0</Reqd>
+		<Description>Insert here the set of "OrderQtyData" fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+            **Note: OrderQty field is required for Single Instrument Orders unless rejecting or acknowledging an order for a CashOrderQty or PercentOrder.
+        </Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>51</Position>
+		<TagText>40</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>53</Position>
+		<TagText>44</TagText>
+		<Reqd>0</Reqd>
+		<Description>Present if specified on the order</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>54</Position>
+		<TagText>99</TagText>
+		<Reqd>0</Reqd>
+		<Description>Present if specified on the order</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>66</Position>
+		<TagText>59</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>74</Position>
+		<TagText>32</TagText>
+		<Reqd>0</Reqd>
+		<Description>Quantity of contracts bought/sold on this fill. Will be present if ExecType = Trade.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>76</Position>
+		<TagText>31</TagText>
+		<Reqd>0</Reqd>
+		<Description>Price of this (last) fill.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>86</Position>
+		<TagText>151</TagText>
+		<Reqd>1</Reqd>
+		<Description>Quantity open for further execution.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>87</Position>
+		<TagText>14</TagText>
+		<Reqd>1</Reqd>
+		<Description>Currently executed quantity for chain of orders.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>88</Position>
+		<TagText>6</TagText>
+		<Reqd>1</Reqd>
+		<Description>Average fill price for the chain of orders. Rounded down to the nearest price increment.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>94</Position>
+		<TagText>60</TagText>
+		<Reqd>0</Reqd>
+		<Description>Time the transaction represented by this ExecutionReport occurred
+		</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>96</Position>
+		<TagText>64</TagText>
+		<Reqd>0</Reqd>
+		<Description>When reporting a trade execution, this field contains the settlement date for the trade being reported. This field needs to be enabled by LMAX Customer Services.</Description>
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>124</Position>
+		<TagText>58</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>165</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>9</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = 9
+        </Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>37</TagText>
+		<Reqd>1</Reqd>
+		<Description>The OrderId of the Order which failed to be cancelled. If CxlRejReason=”Unknown order” this will be “NONE”.</Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>11</TagText>
+		<Reqd>1</Reqd>
+		<Description>The client supplied identifier for the cancel request or to the replacement order.</Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>7</Position>
+		<TagText>41</TagText>
+		<Reqd>1</Reqd>
+		<Description>ClOrdID which could not be canceled/replaced. ClOrdID of the previous accepted order (NOT the initial order of the day) when canceling or replacing an order.</Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>8</Position>
+		<TagText>39</TagText>
+		<Reqd>1</Reqd>
+		<Description>OrdStatus value after this cancel reject is applied. If (102) = "Unknown Order", specify Rejected.</Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>15</Position>
+		<TagText>1</TagText>
+		<Reqd>0</Reqd>
+		<Description>The LMAX Account Id on which the Cancel or Cancel/Replace was attempted.</Description>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>18</Position>
+		<TagText>434</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>19</Position>
+		<TagText>102</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>20</Position>
+		<TagText>58</TagText>
+		<Reqd>0</Reqd>
+		<Description />
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>23</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>10</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = A
+        </Description>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>98</TagText>
+		<Reqd>1</Reqd>
+		<Description>Always '0' - None</Description>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>108</TagText>
+		<Reqd>1</Reqd>
+		<Description>The maximum time to wait before a Heartbeat message is sent in the absence of other activity on the connection. The same value is used by both parties.</Description>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>6</Position>
+		<TagText>141</TagText>
+		<Reqd>0</Reqd>
+		<Description>Indicates both sides of a FIX session should reset sequence numbers</Description>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>8</Position>
+		<TagText>383</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>13</Position>
+		<TagText>553</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>14</Position>
+		<TagText>554</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>15</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>11</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = D
+        </Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>11</TagText>
+		<Reqd>1</Reqd>
+		<Description>The client supplied identifier for the order. ClOrdId is restricted to a maximum of 20 arbitrary ASCII characters.</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>30</Position>
+		<TagText>100</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>35</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "Instrument" (symbology) fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+        </Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+    <MsgContents>
+        <Indent>0</Indent>
+        <Position>36</Position>
+        <TagText>1</TagText>
+        <Reqd>0</Reqd>
+        <Description>The LMAX Account ID on which to place the new order. If not specified then the user's default account will be used.</Description>
+        <MsgID>14</MsgID>
+    </MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>40</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>41</Position>
+		<TagText>18</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>42</Position>
+		<TagText>60</TagText>
+		<Reqd>1</Reqd>
+		<Description>Time this order request was initiated/released by the trader, trading system, or intermediary. Ignored by LMAX.</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>45</Position>
+		<TagText>OrderQtyData</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "OrderQtyData" fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+        </Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>46</Position>
+		<TagText>40</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>48</Position>
+		<TagText>44</TagText>
+		<Reqd>0</Reqd>
+		<Description>Required for limit OrdTypes.</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>49</Position>
+		<TagText>99</TagText>
+		<Reqd>0</Reqd>
+		<Description>Required for stop OrdTypes.</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>57</Position>
+		<TagText>59</TagText>
+		<Reqd>0</Reqd>
+		<Description>Specifies how long the order remains in effect.
+            For OrdType = Market: Valid values: 3 = Immediate or Cancel (IOC); 4 = Fill or Kill (FOK)
+            For OrdType = Limit: Valid values: 0 = Day (trading session); 1 = Good Till Cancel; 3 = Immediate or Cancel (IOC); 4 = Fill or Kill (FOK)
+            For OrdType = Stop: Valid values: 0 = Day (trading session); 1 = Good Till Cancel</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>58</Position>
+		<TagText>1089</TagText>
+		<Reqd>0</Reqd>
+		<Description>Minimum trade quantity.</Description>
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>87</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>14</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = F
+        </Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+    <MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>1</TagText>
+		<Reqd>0</Reqd>
+		<Description>The LMAX Account ID on which to attempt to cancel the order. If not specified then the user's default account will be used.</Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>41</TagText>
+		<Reqd>1</Reqd>
+		<Description>ClOrdID of the previous non-rejected order (NOT the initial order of the day) when canceling or replacing an order.
+        </Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>11</TagText>
+		<Reqd>1</Reqd>
+		<Description>The client supplied identifier for the order. ClOrdId is restricted to a maximum of 20 arbitrary ASCII characters.</Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>13</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "Instrument" (symbology) fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+        </Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>17</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>18</Position>
+		<TagText>60</TagText>
+		<Reqd>1</Reqd>
+		<Description>Time this order request was initiated/released by the trader or trading system.</Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>19</Position>
+		<TagText>OrderQtyData</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "OrderQtyData" fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+            Note: OrderQty = CumQty + LeavesQty (see exceptions above)
+        </Description>
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>24</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>16</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = G
+        </Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>41</TagText>
+		<Reqd>1</Reqd>
+		<Description>ClOrdID of the previous non-rejected order (NOT the initial order of the day) when canceling or replacing an order.
+        </Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>1</TagText>
+		<Reqd>0</Reqd>
+		<Description>The LMAX Account ID on which to attempt to cancel and replace the order. If not specified then the user's default account will be used.</Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+    <MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>11</TagText>
+		<Reqd>1</Reqd>
+		<Description>The client supplied identifier for the order. ClOrdId is restricted to a maximum of 20 arbitrary ASCII characters.</Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>13</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "Instrument" (symbology) fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+        </Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>17</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>18</Position>
+		<TagText>60</TagText>
+		<Reqd>1</Reqd>
+		<Description>Time this order request was initiated/released by the trader or trading system.</Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>19</Position>
+		<TagText>OrderQtyData</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of "OrderQtyData" fields defined in "COMMON COMPONENTS OF APPLICATION MESSAGES"
+            Note: OrderQty = CumQty + LeavesQty (see exceptions above)
+        </Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>41</Position>
+		<TagText>18</TagText>
+		<Reqd>0</Reqd>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>46</Position>
+		<TagText>40</TagText>
+		<Reqd>1</Reqd>
+		<Description>Order type.
+            LMAX Supported values:
+            2 = Limit</Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>48</Position>
+		<TagText>44</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>57</Position>
+		<TagText>59</TagText>
+		<Reqd>0</Reqd>
+		<Description>Specifies how long the order remains in effect.
+            Valid values: 0 = Day (trading session)</Description>
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = H</Description>
+		<MsgID>18</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>11</TagText>
+		<Reqd>1</Reqd>
+		<Description>The ClOrdID of the order whose status is being requested.</Description>
+		<MsgID>18</MsgID>
+	</MsgContents>
+    <MsgContents>
+        <Indent>0</Indent>
+        <Position>4</Position>
+        <TagText>1</TagText>
+        <Reqd>0</Reqd>
+        <Description>The LMAX Account ID on which the order whose state is being requested was placed. If not specified then the user's default account will be used.</Description>
+        <MsgID>18</MsgID>
+    </MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>7</Position>
+		<TagText>790</TagText>
+		<Reqd>0</Reqd>
+		<Description>Optional, can be used to uniquely identify a specific Order Status Request message. Echoed back on Execution Report if provided. restricted to a maximum of 16 hexadecimal
+            characters with no leading 0 characters (essentially this is a 64bit number).</Description>
+		<MsgID>18</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>10</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of &quot;Instrument&quot; (symbology) fields defined in &quot;COMMON COMPONENTS OF APPLICATION MESSAGES&quot; </Description>
+		<MsgID>18</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>14</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>18</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>15</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>18</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>100</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>17</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = AE
+        </Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>568</TagText>
+		<Reqd>0</Reqd>
+		<Description>Trade Capture Report Request ID as provided in the Trade Capture Report Request.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>12</Position>
+		<TagText>912</TagText>
+		<Reqd>0</Reqd>
+		<Description>Indicates if this is the last report in the response to a Trade Capture Report Request
+  Y = Last message
+  N = Not last message</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>20</Position>
+		<TagText>17</TagText>
+		<Reqd>0</Reqd>
+		<Description>Execution ID (Trade Identifier) as assigned by the LMAX Broker as reported on the original Execution Report (MsgType=8) message.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>22</Position>
+		<TagText>527</TagText>
+		<Reqd>0</Reqd>
+		<Description>Execution ID (Trade Identifier) as assigned by the LMAX MTF as reported on the original Execution Report (MsgType=8) message.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>26</Position>
+		<TagText>Instrument</TagText>
+		<Reqd>1</Reqd>
+		<Description>Insert here the set of &quot;Instrument&quot; (symbology) fields defined in &quot;COMMON COMPONENTS OF APPLICATION MESSAGES&quot; </Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>35</Position>
+		<TagText>32</TagText>
+		<Reqd>1</Reqd>
+		<Description>Trade quantity.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>36</Position>
+		<TagText>31</TagText>
+		<Reqd>1</Reqd>
+		<Description>Trade price.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>41</Position>
+		<TagText>75</TagText>
+		<Reqd>1</Reqd>
+		<Description>Trade date on which the trade occurred.</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>62</Position>
+		<TagText>60</TagText>
+		<Reqd>1</Reqd>
+		<Description>Time the transaction represented by this Trade Capture Report occurred to millisecond resolution</Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>68</Position>
+		<TagText>TrdCapRptSideGrp</TagText>
+		<Reqd>1</Reqd>
+		<Description>Number of sides
+        </Description>
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>100</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description />
+		<MsgID>64</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>48</TagText>
+		<Reqd>1</Reqd>
+		<Description>Must contain the LMAX orderbook id.</Description>
+		<MsgID>1003</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>22</TagText>
+		<Reqd>1</Reqd>
+		<Description>Must contain the value '8' (Exchange Symbol)</Description>
+		<MsgID>1003</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>38</TagText>
+		<Reqd>1</Reqd>
+		<Description>The number of contracts that an order is for.</Description>
+		<MsgID>1011</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>8</TagText>
+		<Reqd>1</Reqd>
+		<Description>The FIX version number identifier. Always 'FIX.4.4'</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>9</TagText>
+		<Reqd>1</Reqd>
+		<Description>Length of the FIX Message.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>35</TagText>
+		<Reqd>1</Reqd>
+		<Description>The type of the message.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>49</TagText>
+		<Reqd>1</Reqd>
+		<Description>Identifier for the sender of the message.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>56</TagText>
+		<Reqd>1</Reqd>
+		<Description>Identifier for the receiver of the message.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>10</Position>
+		<TagText>34</TagText>
+		<Reqd>1</Reqd>
+		<Description>The unique sequence number for the message within current FIX session.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>19</Position>
+		<TagText>43</TagText>
+		<Reqd>0</Reqd>
+		<Description>Always required for retransmitted messages, whether prompted by the sending system or as the result of a resend request. Set to 'Y' if this is a resent message.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>20</Position>
+		<TagText>97</TagText>
+		<Reqd>0</Reqd>
+		<Description>Never used by LMAX.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>21</Position>
+		<TagText>52</TagText>
+		<Reqd>1</Reqd>
+		<Description>Time message was sent.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>22</Position>
+		<TagText>122</TagText>
+		<Reqd>0</Reqd>
+		<Description>Timestamp when message was originally sent. Required for message resent as a result of a ResendRequest.</Description>
+		<MsgID>1024</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>10</TagText>
+		<Reqd>1</Reqd>
+		<Description>Checksum for message contents.</Description>
+		<MsgID>1025</MsgID>
+	</MsgContents>
+
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = AD</Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>568</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>569</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>263</TagText>
+		<Reqd>0</Reqd>
+		<Description>Used to subscribe / unsubscribe for trade capture reports.
+LMAX supported values:
+  0 = Snapshot</Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+    <MsgContents>
+        <Indent>0</Indent>
+        <Position>5</Position>
+        <TagText>1</TagText>
+        <Reqd>0</Reqd>
+        <Description>The LMAX Account Id whose trades to request.</Description>
+        <MsgID>63</MsgID>
+    </MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>26</Position>
+		<TagText>TrdCapDtGrp</TagText>
+		<Reqd>1</Reqd>
+		<Description>Number of date ranges provided (must be 1 or 2 if specified)</Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>42</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>63</MsgID>
+	</MsgContents>
+
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>StandardHeader</TagText>
+		<Reqd>1</Reqd>
+		<Description>MsgType = AQ</Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>2</Position>
+		<TagText>568</TagText>
+		<Reqd>1</Reqd>
+		<Description>Trade Capture Report Request ID as provided in the Trade Capture Report Request.</Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>3</Position>
+		<TagText>569</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>4</Position>
+		<TagText>263</TagText>
+		<Reqd>0</Reqd>
+		<Description>Used to subscribe / unsubscribe for trade capture reports.
+LMAX supported values:
+  0 = Snapshot</Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>5</Position>
+		<TagText>748</TagText>
+		<Reqd>0</Reqd>
+		<Description></Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>6</Position>
+		<TagText>749</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>7</Position>
+		<TagText>750</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>16</Position>
+		<TagText>58</TagText>
+		<Reqd>0</Reqd>
+		<Description>Contains error message when Trade Capture Report Request is rejected.</Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>19</Position>
+		<TagText>StandardTrailer</TagText>
+		<Reqd>1</Reqd>
+		<Description></Description>
+		<MsgID>76</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>552</TagText>
+		<Reqd>1</Reqd>
+		<Description>Number of Side repeating group instances.  
+Valid values:
+  1
+  
+Contains information about the client Order which traded.</Description>
+		<MsgID>2061</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>1</Indent>
+		<Position>2</Position>
+		<TagText>54</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>2061</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>1</Indent>
+		<Position>3</Position>
+		<TagText>37</TagText>
+		<Reqd>1</Reqd>
+		<MsgID>2061</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>1</Indent>
+		<Position>5</Position>
+		<TagText>11</TagText>
+		<Reqd>0</Reqd>
+		<Description>The client supplied identifier for the order.</Description>
+		<MsgID>2061</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>1</Indent>
+		<Position>9</Position>
+		<TagText>1</TagText>
+		<Reqd>0</Reqd>
+		<Description>The LMAX Account Id on which the trade occurred</Description>
+		<MsgID>2061</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>0</Indent>
+		<Position>1</Position>
+		<TagText>580</TagText>
+		<Reqd>1</Reqd>
+		<Description>Number of Date fields provided in date range. Must be 2.</Description>
+		<MsgID>2069</MsgID>
+	</MsgContents>
+	<MsgContents>
+		<Indent>1</Indent>
+		<Position>3</Position>
+		<TagText>60</TagText>
+		<Reqd>1</Reqd>
+		<Description>Start (First entry in repeating group)or end (Second entry in repeating group) timestamp of the period for which trades should be retrieved expressed in UTC.</Description>
+		<MsgID>2069</MsgID>
+	</MsgContents>
+</dataroot>

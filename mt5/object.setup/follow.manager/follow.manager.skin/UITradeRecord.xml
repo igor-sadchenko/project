@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout>
+		<VerticalLayout>
+			<List name="DEF_6FD5BAFC0E9AA55532059D7B42D18D86" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+			</List>
+			<HorizontalLayout height="20">
+				<Control/>
+				<!--清空日志-->
+				<Button name="DEF_3D50BF1FD9671B156B42C81CB1C2FDD0" width="100" text="清空日志" font="31" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>		
+			</HorizontalLayout>
+		</VerticalLayout>
+		<HorizontalLayout width="50">
+		</HorizontalLayout>
+	</HorizontalLayout>
+</Window>

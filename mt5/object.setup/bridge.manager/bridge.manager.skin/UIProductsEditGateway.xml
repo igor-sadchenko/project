@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ListContainerElement height="125" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="0" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<Control height="2" bkcolor="#FFFFD700"/>
+			<Control height="3"/>
+			<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1" bkcolor="#FF1C1C1C">
+				<Control width="5"/>
+				<Label height="20" text="映射到MT5平台的产品" textcolor="#FFCD0000" font="5" align="left"/>		
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="平台产品ID" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_3E839BF7789BF0E6DFA24342111D0612" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="70" text="合约名字" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="130" name="DEF_B45EA3435AEEC80E041D2976445EF230" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>											
+			</HorizontalLayout>	
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="66" text="合约大小" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="134" name="DEF_8927CF51F002E0F94A944EF9763C6535" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>	
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="70" text="点差精度" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="130" name="DEF_EC5FBD5A1075CB62DB95F20FCF3138EE" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>	
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="95" text="报价精确位数" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="105" name="DEF_964D82686DF3658C1061DE850C8EF781" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>	
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+			</HorizontalLayout>
+			<!--
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="108" text="指定交易所抛单" textcolor="#FFFFFFFF" align="center"/>
+				<Combo name="DEF_B2738C788AA1D1A64BB8E79CD7F60892" enabled="false" width="92" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="1" font="1" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="不指定" selected="true"/>
+				</Combo>				
+				<Label width="115" text="触发调仓点差<=" textcolor="#FFFFFFFF" align="center"/>
+				<Edit name="DEF_F63588E183AF8A06F66118F7C1ECE253" width="85" enabled="true" text="100" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>	
+			</HorizontalLayout>
+			-->
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="卖成交点差" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_2BA0957EF0EA97174AB51EB0CEE81AA9" enabled="true" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="80" text="买成交点差" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_E7CD4A879AC2AF83E8BCC972FA9440DC" enabled="true" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="95" text="成交点差偏移" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="105" name="DEF_DD0152AC9693302127869DFDB845EACD" enabled="true" text="0" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">			
+				<Label width="66" text="抛单开关" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Option name="DEF_7F0D2E6D60A447C8B02AEC043D83BE10" text="启用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_63D2DFA03C633CEB15FD89972654F04E" selected="true"/>
+				<Option name="DEF_11FD062045877D22EA88791731E5BD1E" text="禁用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_63D2DFA03C633CEB15FD89972654F04E"/>									
+			</HorizontalLayout>			
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

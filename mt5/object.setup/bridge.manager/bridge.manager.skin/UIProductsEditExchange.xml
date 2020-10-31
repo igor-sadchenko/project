@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="110" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<Control height="2" bkcolor="#FFFFD700"/>
+			<Control height="3"/>
+			<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1" bkcolor="#FF1C1C1C">
+				<Control width="5"/>
+				<Label height="20" text="映射到交易所的产品" textcolor="#FFCD0000" font="5" align="left"/>		
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="70" text="交易所ID" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="130" name="DEF_2B8769552A23837B2A80ABD17E6830A9" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="70" text="合约名字" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="130" name="DEF_782FE71EADA80A6608D43FD6F5748E8E" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="40" text="本币" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="160" name="DEF_F013433B32A84094D59D8182D9E8BAA0" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+			</HorizontalLayout>	
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="66" text="合约大小" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="134" name="DEF_F5DCB6944B77D5EF66CCA564C61441C8" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="95" text="最小报价单位" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="105" name="DEF_B75AAB7E5503C7B5718EE7CEB9711A0E" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="最小交易量" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_E724368463111A712EF0BC8A28EA0068" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="80" text="最大交易量" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_A45A97E91EBCF634F3F22B1BA09AD978" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="80" text="交易量步长" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_BBD2423C9D525B438688CB19AC078D62" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+			</HorizontalLayout>
+			<HorizontalLayout>
+			</HorizontalLayout>
+
+			<Control height="10"/>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="20">
+		<Label name="DEF_0270F9078DCD0BA2228FF73351465A0D" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_7D2D332BCF41A3DB5A067E9299848AF1" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_9E21158473D2AA536B269348425BFEC8" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_C8BEEF69753EE21B7C646D22C942B65B" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+	</ListContainerElement>
+</Window>

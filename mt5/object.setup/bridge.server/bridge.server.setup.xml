@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<system>
+	<setup>
+		<!--***************-->
+		<api path="C:/c.object.setup/shared.api/"/>
+		<!--***************-->
+		<symbols path="bridge.data/symbols/"/>
+		<trade_record path="bridge.data/trade/"/>
+		<system_setup pathname="bridge.data/bridge.system.setup.xml"/>
+		<system_assign_logins_post_order pathname="bridge.data/bridge.system.assign.logins.post.order.xml"/>
+	</setup>
+	<server>
+		<tcp addr="0.0.0.0:9800"/>
+	</server>
+	<proceses>
+		<process id="A" enable="true" show="false" identify="LMAX" pathname="bridge.exchanges/lmax/bridge.exchange.lmax.exe"/>
+		<process id="B" enable="true" show="false" identify="CFH" pathname="bridge.exchanges/cfh/bridge.exchange.cfh.exe"/>
+		<process id="C" enable="false" show="false" identify="ISAM" pathname="bridge.exchanges/isam/bridge.exchange.isam.exe"/>
+	</proceses>
+	<clients>
+		<!--Guest-->
+		<client id="100" password="abc123" identify="Guest" username="GUEST"/>
+		<!--Administrator-->
+		<client id="201" password="abc123" identify="Administrator" username="ADMIN" />
+		<client id="202" password="abc123" identify="Administrator" username="ADMIN" />
+		<client id="203" password="abc123" identify="Administrator" username="ADMIN" />
+		<client id="204" password="abc123" identify="Administrator" username="ADMIN" />
+		<client id="205" password="abc123" identify="Administrator" username="ADMIN" />
+		<client id="206" password="abc123" identify="Administrator" username="ADMIN" />
+		<!--MT5DataFeed/MTFeederPlugin-->
+		<client id="301" password="abc123" identify="MT5DataFeed" username="HOOYUEN"/>
+		<client id="302" password="abc123" identify="MT5DataPlugin" username="ADMIN"/>
+		<!--MT5Gateway/MTDealerPlugin-->
+		<client id="402" password="abc123" identify="MT5Gateway" username="HOOYUEN"/>
+		<!--LPMarketData-->
+		<client id="50A" password="abc123" identify="LPMarketData" username="LMAX"/>
+		<client id="50B" password="abc123" identify="LPMarketData" username="CFH"/>
+		<client id="50C" password="abc123" identify="LPMarketData" username="ISAM"/>
+		<!--LPTradeOrder-->
+		<client id="60A" password="abc123" identify="LPTradeOrder" username="LMAX"/>
+		<client id="60B" password="abc123" identify="LPTradeOrder" username="CFH"/>
+		<client id="60C" password="abc123" identify="LPTradeOrder" username="ISAM"/>
+	</clients>
+	<!--抛单必须人协程业务上下文-->
+	<!--系统检测以下业务准备完毕-->
+	<readys>
+		<context id="50A" required="true"/>
+		<context id="60A" required="true"/>
+		<context id="50B" required="true"/>
+		<context id="60B" required="true"/>
+		<!--<context id="301" required="true"/>-->
+		<context id="402" required="true"/>
+	</readys>
+	<commands>
+		<command id="10000" input="/10000" explain=""/>
+		<command id="10001" input="/10001" explain="初始化LP产品列表"/>
+		<command id="10002" input="/10002" explain="初始化MT产品列表"/>
+		<command id="10003" input="/10003" explain="初始化系统产品列表"/>
+		<command id="10004" input="/10004" explain="启用/禁用 聚合报价推送"/>
+		<command id="10005" input="/10005" explain="查看对冲/调仓队列"/>
+	</commands>
+</system>

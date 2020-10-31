@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<server>
+		<tcp addr="0.0.0.0:9803" enable="false"/>
+		<tcpto addr="127.0.0.1:9800" enable="true"/>
+		<login id="302" username="FeederPlugin" password="abc123" identify="MTFEEDERPLUGIN"/>
+	</server>
+	<system>
+		<api path="C:\c.object.setup\shared.api\"/>
+	</system>
+</setup>
+
+

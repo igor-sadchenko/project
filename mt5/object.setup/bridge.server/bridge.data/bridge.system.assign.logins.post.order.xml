@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<Exchange ID="A00000000">
+	</Exchange>
+	<Exchange ID="B00000000">
+	</Exchange>
+	<Exchange ID="C00000000">
+	</Exchange>
+</setup>

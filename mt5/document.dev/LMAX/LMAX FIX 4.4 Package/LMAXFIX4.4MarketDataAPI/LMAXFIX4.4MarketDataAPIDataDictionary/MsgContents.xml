@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MsgContents.xsd" generated="2006-05-08T17:42:59">
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 0
+</Description>
+    <MsgID>1</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>112</TagText>
+    <Reqd>0</Reqd>
+    <Description>Required when the heartbeat is the result of a Test Request message.
+</Description>
+    <MsgID>1</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>1</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 1
+</Description>
+    <MsgID>2</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>112</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>2</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>2</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 2
+</Description>
+    <MsgID>3</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>7</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>3</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>16</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>3</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>3</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 3
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>45</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgSeqNum of rejected message
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>371</TagText>
+    <Reqd>0</Reqd>
+    <Description>The tag number of the FIX field being referenced.
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>372</TagText>
+    <Reqd>0</Reqd>
+    <Description>The MsgType of the FIX message being referenced.
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>5</Position>
+    <TagText>373</TagText>
+    <Reqd>0</Reqd>
+    <Description>Code to identify reason for a session-level Reject message.
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>6</Position>
+    <TagText>58</TagText>
+    <Reqd>0</Reqd>
+    <Description>Where possible, message to explain reason for rejection
+</Description>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>9</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>4</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 4
+</Description>
+    <MsgID>5</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>123</TagText>
+    <Reqd>0</Reqd>
+    <Description/>
+    <MsgID>5</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>36</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>5</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>5</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = 5
+</Description>
+    <MsgID>6</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>58</TagText>
+    <Reqd>0</Reqd>
+    <Description>If LMAX logs out a client this may contain a text description for the reason for the logout.</Description>
+    <MsgID>6</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>5</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>6</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = A
+</Description>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>98</TagText>
+    <Reqd>1</Reqd>
+    <Description>Always '0' - None
+</Description>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>108</TagText>
+    <Reqd>1</Reqd>
+    <Description>The maximum time to wait before a Heartbeat message is sent in the absence of other activity on the connection. The same value is used by both parties.
+</Description>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>6</Position>
+    <TagText>141</TagText>
+    <Reqd>0</Reqd>
+    <Description>Indicates both sides of a FIX session should reset sequence numbers
+</Description>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>8</Position>
+    <TagText>383</TagText>
+    <Reqd>0</Reqd>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>13</Position>
+    <TagText>553</TagText>
+    <Reqd>0</Reqd>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>14</Position>
+    <TagText>554</TagText>
+    <Reqd>0</Reqd>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>15</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description/>
+    <MsgID>11</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>8</TagText>
+    <Reqd>1</Reqd>
+    <Description>The FIX version number identifier. Always 'FIX.4.4'</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+    <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>48</TagText>
+    <Reqd>1</Reqd>
+    <Description>Must contain the LMAX orderbook id.</Description>
+    <MsgID>1003</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>22</TagText>
+    <Reqd>1</Reqd>
+    <Description>Must contain the value '8' (Exchange Symbol)</Description>
+    <MsgID>1003</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>9</TagText>
+    <Reqd>1</Reqd>
+    <Description>Length of the FIX Message.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>35</TagText>
+    <Reqd>1</Reqd>
+    <Description>The type of the message.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>49</TagText>
+    <Reqd>1</Reqd>
+    <Description>Identifier for the sender of the message.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>5</Position>
+    <TagText>56</TagText>
+    <Reqd>1</Reqd>
+    <Description>Identifier for the receiver of the message.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>10</Position>
+    <TagText>34</TagText>
+    <Reqd>1</Reqd>
+    <Description>The unique sequence number for the message within current FIX session.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>19</Position>
+    <TagText>43</TagText>
+    <Reqd>0</Reqd>
+    <Description>Always required for retransmitted messages, whether prompted by the sending system or as the result of a resend request. Set to 'Y' if this is a resent message.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>20</Position>
+    <TagText>97</TagText>
+    <Reqd>0</Reqd>
+    <Description>Never used by LMAX.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>21</Position>
+    <TagText>52</TagText>
+    <Reqd>1</Reqd>
+    <Description>Time message was sent.
+</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>22</Position>
+    <TagText>122</TagText>
+    <Reqd>0</Reqd>
+    <Description>Timestamp when message was originally sent. Required for message resent as a result of a ResendRequest.</Description>
+    <MsgID>1024</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>10</TagText>
+    <Reqd>1</Reqd>
+    <Description>Checksum for message contents.</Description>
+    <MsgID>1025</MsgID>
+  </MsgContents>
+  
+<MsgContents>
+  <Indent>0</Indent>
+  <Position>1</Position>
+  <TagText>StandardHeader</TagText>
+  <Reqd>1</Reqd>
+  <Description>MsgType = V
+</Description>
+  <MsgID>29</MsgID>
+</MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>262</TagText>
+    <Reqd>1</Reqd>
+    <Description>Must be unique, or the ID of previous Market Data Request
+        to disable if SubscriptionRequestType = Disable previous Snapshot +
+        Updates Request (2).
+</Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>263</TagText>
+    <Reqd>1</Reqd>
+    <Description>SubcriptionRequestType indicates to the other party what type of response is expected.
+LMAX supported values:
+  1 - Snapshot + Updates (Subscribe)
+  2 - Disable previous Snapshot + Updates Request (Unsubscribe)
+
+LMAX does not support
+  0 - Snapshot   
+</Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>4</Position>
+    <TagText>264</TagText>
+    <Reqd>1</Reqd>
+    <Description>
+    </Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>5</Position>
+    <TagText>265</TagText>
+    <Reqd>0</Reqd>
+    <Description>Required if SubscriptionRequestType = Snapshot + Updates (1).
+LMAX supported values
+  0 - Full Refresh.
+</Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>10</Position>
+    <TagText>MDReqGrp</TagText>
+    <Reqd>1</Reqd>
+    <Description>Number of MDEntryType fields requested.
+</Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>12</Position>
+    <TagText>InstrmtMDReqGrp</TagText>
+    <Reqd>1</Reqd>
+    <Description>Number of symbols (instruments) requested.
+</Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>23</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description>
+    </Description>
+    <MsgID>29</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = W
+</Description>
+    <MsgID>30</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>262</TagText>
+    <Reqd>0</Reqd>
+    <Description>Conditionally required if this message is in response to
+    a Market Data Request.
+</Description>
+    <MsgID>30</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>Instrument</TagText>
+    <Reqd>1</Reqd>
+    <Description>Insert here the set of &quot;Instrument&quot; (symbology)
+    fields defined in &quot;COMMON COMPONENTS OF APPLICATION
+    MESSAGES&quot; </Description>
+    <MsgID>30</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>11</Position>
+    <TagText>MDFullGrp</TagText>
+    <Reqd>1</Reqd>
+    <Description>Number of entries following.
+</Description>
+    <MsgID>30</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>48</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description>
+  </Description>
+    <MsgID>30</MsgID>
+  </MsgContents>
+  
+  
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>StandardHeader</TagText>
+    <Reqd>1</Reqd>
+    <Description>MsgType = Y
+  </Description>
+    <MsgID>32</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>2</Position>
+    <TagText>262</TagText>
+    <Reqd>1</Reqd>
+    <Description>Must refer to the MDReqID of the request.
+  </Description>
+    <MsgID>32</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>3</Position>
+    <TagText>281</TagText>
+    <Reqd>0</Reqd>
+    <Description>Reason for the rejection of a Market Data request.
+LMAX supported values:
+  0 = Unknown symbol
+  1 = Duplicate MDReqID
+  4 = Unsupported SubscriptionRequestType
+  5 = Unsupported MarketDepth
+  6 = Unsupported MDUpdateType
+  8 = Unsupported MDEntryType</Description>
+    <MsgID>32</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>6</Position>
+    <TagText>58</TagText>
+    <Reqd>0</Reqd>
+    <Description>
+    </Description>
+    <MsgID>32</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>9</Position>
+    <TagText>StandardTrailer</TagText>
+    <Reqd>1</Reqd>
+    <Description>
+    </Description>
+    <MsgID>32</MsgID>
+  </MsgContents>
+  
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>146</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>2022</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>2</Position>
+    <TagText>Instrument</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>2022</MsgID>
+  </MsgContents>
+  
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>267</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>2033</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>2</Position>
+    <TagText>269</TagText>
+    <Reqd>1</Reqd>
+    <Description>Type  Market Data entry.
+LMAX supported values:
+  0 = Bid
+  1 = Offer
+  
+LMAX only allows subscription to both bid and ask at the same time. If only 0 or 1 is specified individually for a Market Data Request, then the request will be rejected.
+</Description>
+    <MsgID>2033</MsgID>
+    
+  </MsgContents>
+  
+  <MsgContents>
+    <Indent>0</Indent>
+    <Position>1</Position>
+    <TagText>268</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>2</Position>
+    <TagText>269</TagText>
+    <Reqd>1</Reqd>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>3</Position>
+    <TagText>270</TagText>
+    <Reqd>0</Reqd>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>5</Position>
+    <TagText>271</TagText>
+    <Reqd>0</Reqd>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>6</Position>
+    <TagText>272</TagText>
+    <Reqd>0</Reqd>
+    <Description>Date of Market Data Entry. This tag will only be present on the first entry in the repeating group</Description>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+  <MsgContents>
+    <Indent>1</Indent>
+    <Position>7</Position>
+    <TagText>273</TagText>
+    <Reqd>0</Reqd>
+    <Description>Time of Market Data Entry. This tag will only be present on the first entry in the repeating group</Description>
+    <MsgID>2031</MsgID>
+  </MsgContents>
+</dataroot>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<runtime path="shared.api"/>
+	<tcpto addr="47.116.136.101:9801"/>
+	<login id="201" username="Admin" password="abc123" identify="Admin"/>
+</setup>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<server>
+		<tcp addr="0.0.0.0:9808" enable="true"/>
+		<tcpto addr="127.0.0.1:9800" enable="true"/>
+		<login id="402" username="DealerPlugin" password="abc123" identify="MTDEALERPLUGIN"/>
+	</server>
+	<system>
+		<api path="C:\c.object.setup\shared.api\"/>
+		<!--监控桥系统-->
+		<proxy enable="false" interval="10000" pathname="C:\Project\1.20.930.1028\sk.bridge.proxy.exe"/>
+	</system>
+</setup>
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="55" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="0" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<!--
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label text="/*注意！请根据最小报价单位调整*/" textcolor="#FF228B22" font="23" align="left"/>
+			</HorizontalLayout>
+			-->
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="卖报价点差" textcolor="#FFFFA500" font="23" align="center"/>
+				<Edit width="120" name="DEF_849D3EF577DDDE724FD40994D408F150" enabled="true" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="80" text="买报价点差" textcolor="#FFFFA500" font="23" align="center"/>
+				<Edit width="120" name="DEF_B22B0B4471F195A1BB8FA4BB0557D150" enabled="true" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="95" text="报价点差偏移" textcolor="#FFFFA500" font="23" align="center"/>
+				<Edit width="105" name="DEF_E6453731ED2FEF9B2A72F6F3E0D954AE" enabled="true" text="0" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">			
+				<Label width="66" text="报价开关" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Option name="DEF_ECACA9AE7F4420437A5DDBCD7CE73E00" text="启用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_60604BCCB8C105BFAA0DCB268ED0F075" selected="true"/>
+				<Option name="DEF_634D8ADBFC97567E581EBC9FB889EBFE" text="禁用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_60604BCCB8C105BFAA0DCB268ED0F075"/>										
+			</HorizontalLayout>
+			<HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

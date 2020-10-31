@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Font id="30" name="微软雅黑" size="10" bold="true" shared="false"/>
+	<Font id="31" name="微软雅黑" size="12" bold="true" shared="false"/>
+	<HorizontalLayout>
+		<Control width="2"/>
+		<HorizontalLayout minwidth="400" maxwidth="1024" width="666" sepwidth="5" sepimm="true">
+			<VerticalLayout>
+				<List name="DEF_9CD12D041D24ED8D64E170F9A3A17391" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="7" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+				<!--<List name="DEF_9CD12D041D24ED8D64E170F9A3A17391" header="show" bkcolor="#FF1E1E1E" vscrollbar="true" hscrollbar="false">-->
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="跟单关系" textcolor="#FFFFFFFF" width="120" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="跟单开关" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="强跟开关" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="方向类型" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="多空类型" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="最大阀值" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="最小阀值" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="跟随类型" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="下单比例" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="固定手数" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="最小手数" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="最大手数" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="止盈止损" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="点差校正" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />				
+						<ListHeaderItem text="更新时间" textcolor="#FFFFFFFF" width="150" align="center" textpadding="0,0,0,0" />				
+					</ListHeader>
+				</List>
+				<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+					<Button name="DEF_AA940C6CDB6BEFC36FB6D931F852BCE8" width="100" text="刷新跟单配置" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>				
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<Control width="5"/>
+		<HorizontalLayout>
+			<VerticalLayout width="650" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+				<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+					<Control/>				
+					<Button name="DEF_657D081C484CAFAAB1A6364E4997F51E" width="100" text="创建/更新" font="31" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					<Control width="1"/>
+					<Button name="DEF_3B74158014290D57E0911D478516EE25" width="100" text="删除" font="31" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>		
+					<Control width="2"/>
+				</HorizontalLayout>
+				<List name="DEF_770A32C71E22FBBDD2C8F330C683FD55" header="hidden" bkcolor="#FF1E1E1E" vscrollbar="true" hscrollbar="false">
+				</List>
+				<Control height="2"/>
+				<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+					<Control/>					
+					<Button name="DEF_657D081C484CAFAAB1A6364E4997F51E" width="100" text="创建/更新" font="31" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					<Control width="1"/>
+					<Button name="DEF_3B74158014290D57E0911D478516EE25" width="100" text="删除" font="31" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>		
+					<Control width="2"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<Control width="10"/>
+	</HorizontalLayout>
+</Window>

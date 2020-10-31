@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<Market>
+	<Exchange MarketType="0x1000000000" Identify="SHSE">
+	</Exchange>
+	<Exchange MarketType="0x2000000000" Identify="SZSE">
+	</Exchange>
+	<Exchange MarketType="0x3000000000" Identify="HKEX">
+	</Exchange>
+	<Exchange MarketType="0x4000000000" Identify="CFFEX">
+	</Exchange>
+	<Exchange MarketType="0x5000000000" Identify="CZCE">
+	</Exchange>
+	<Exchange MarketType="0x6000000000" Identify="DCE">
+	</Exchange>
+	<Exchange MarketType="0x7000000000" Identify="SHFE">
+	</Exchange>
+	<Exchange MarketType="0x8000000000" Identify="INE">
+	</Exchange>
+	<Exchange MarketType="0x9000000000" Identify="LMAX">
+		<Instrument MarketType="0x9000000001" ExchangeID="100667" ExchangeSymbol="AUD/CAD" TickSize="0.00001" MinOrderSize="0.1" Symbol="AUDCAD"/>
+	</Exchange>
+	<Exchange MarketType="0xA000000000" Identify="CFH">
+	</Exchange>
+</Market>

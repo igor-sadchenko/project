@@ -1,0 +1,7 @@
+LIBRARY bridge.plugin.dealer.dll
+EXPORTS
+
+api_object_init					@1
+api_object_uninit				@2
+api_dealer_plugin_open				@3
+api_dealer_plugin_close				@4

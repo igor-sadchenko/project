@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<VerticalLayout>
+		<VerticalLayout height="15">
+			<Control height="2"/>
+			<HorizontalLayout>
+				<!--
+				<Option name="DEF_C2FD58CBF2334F9729B561F5DC740301" padding="0,0,0,0"  width="74" height="11" bkimage="images\images\top_menu_01.gif" hotimage="images\images\top_menu_01_1.gif" group="DEF_144C69D8BFD29AB4F8656BDB35DC0ADB" selected="true"/>
+				<Option name="DEF_AAA121D44999EF8C13214A000E13FB52" padding="0,0,0,0"  width="52" height="11" bkimage="images\images\top_menu_02.gif" hotimage="images\images\top_menu_02_1.gif" group="DEF_144C69D8BFD29AB4F8656BDB35DC0ADB"/>
+				<Option name="DEF_D652FF431A2DC187D865034F06CFBB91" padding="0,0,0,0"  width="52" height="11" bkimage="images\images\top_menu_03.gif" hotimage="images\images\top_menu_03_1.gif" group="DEF_144C69D8BFD29AB4F8656BDB35DC0ADB"/>			
+				-->
+			
+			</HorizontalLayout>
+			<Control height="2"/>
+		</VerticalLayout>
+		<HorizontalLayout>
+			<TreeView name="DEF_252C209091A2AC3D370447CFC125F4E3" width="150" visiblefolderbtn="true" visiblecheckbtn="true" vscrollbar="true" hscrollbar="false" bordercolor="#FF3C3C3C" bordersize="1" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FF1E90FF" selitemtextcolor="FF000000" itemhotbkcolor="#FF1E1E1E" itemselectedbkcolor="#FFC8C6CB" itemfont="1">	
+				<TreeNode textcolor="#FFC8C6CB" height="32" text="合约产品配置" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>
+				<TreeNode textcolor="#FFC8C6CB" height="32" text="流动性供应商" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>
+				<TreeNode textcolor="#FFC8C6CB" height="32" text="抛单交易记录" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>
+				<TreeNode textcolor="#FFC8C6CB" height="32" text="系统参数设置" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>
+				<!--
+				<TreeNode name="DEF_D03B2B8C75EFAF7D492AA57132416F5D" textcolor="#FFC8C6CB" height="32" text="" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>
+				<TreeNode name="DEF_6A03E509B3239839CE042F11E750E342" textcolor="#FFC8C6CB" height="32" text="" folderattr="padding=&quot;4,8,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='images/system/treeview_close.png' source='0,0,16,16' &quot; hotimage=&quot;file='images/system/treeview_close.png' source='16,0,32,16' &quot; selectedimage=&quot;file='images/system/treeview_open.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='images/system/treeview_open.png' source='16,0,32,16' &quot;">
+				</TreeNode>	
+				-->
+			</TreeView>		
+			<TabLayout name="DEF_CA9A1E7FE99314C4693E3920565131F5" bordercolor="#FF3C3C3C" bordersize="1">
+				<VerticalLayout>
+					<Include source="UIProducts.xml"/>
+				</VerticalLayout>
+				<VerticalLayout>
+					<Include source="UIExchanges.xml"/>
+				</VerticalLayout>
+				<VerticalLayout>
+					<Include source="UITradeRecord.xml"/>
+				</VerticalLayout>
+				<VerticalLayout>
+					<Include source="UISystemSettings.xml"/>
+				</VerticalLayout>
+				<VerticalLayout>
+					<Include source="UIContactUS.xml"/>
+				</VerticalLayout>
+			</TabLayout>
+			<VerticalLayout width="24">
+				<HorizontalLayout>
+					<Control width="2"/>
+					<VerticalLayout>
+						<Control height="1"/>
+						<Option name="DEF_6FC26413C6EC784AB8BAE49778F47FE5" padding="0,0,0,0"  width="20" height="70" bkimage="images\images\right_001.gif" hotimage="images\images\right_001.gif" pushedimage="images\images\right_001.gif" group="DEF_43B9CFF6C5523B4E1EE18D606E997603" selected="true"/>
+						<Control height="1"/>
+						<Option name="DEF_08E2CE8F82F40074B1FDA0E93806ACD5" padding="0,0,0,0"  width="20" height="70" bkimage="images\images\right_002.gif" hotimage="images\images\right_002.gif" pushedimage="images\images\right_002.gif" group="DEF_43B9CFF6C5523B4E1EE18D606E997603"/>
+						<Control height="1"/>
+						<Option name="DEF_6640BDF922CB6D00D69CE3191C1F91A6" padding="0,0,0,0"  width="20" height="70" bkimage="images\images\right_003.gif" hotimage="images\images\right_003.gif" pushedimage="images\images\right_003.gif" group="DEF_43B9CFF6C5523B4E1EE18D606E997603"/>
+						<Control height="1"/>
+						<Option name="DEF_0FBE882C96DC1392F01FECD6E2B80DDB" padding="0,0,0,0"  width="20" height="70" bkimage="images\images\right_004.gif" hotimage="images\images\right_004.gif" pushedimage="images\images\right_004.gif" group="DEF_43B9CFF6C5523B4E1EE18D606E997603"/>	
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="30" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+			<!--
+			<HorizontalLayout width="300">					
+				<Combo name="DEF_6071F6A479D14DE184CC6BE2394A941C" float="true" pos="0,0,300,26" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="2,2,2,2" vscrollbar="true" hscrollBar="true" itemfont="1" font="1" itemtextpadding="5,0,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF"/>
+				<Edit name="DEF_5B0F87A37DD07AC785551865A46C6158" float="true" pos="0,0,300,26"  font="1" text="" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+			</HorizontalLayout>
+			-->
+			<Control width="10"/>
+			<Label name="DEF_3E1929AD9E83A81950BDDE6FC5E79507" showhtml="true" text="<c #FF0000><b>与系统服务器断开连接...</b></c>" textcolor="#FFFFFFFF" align="left"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

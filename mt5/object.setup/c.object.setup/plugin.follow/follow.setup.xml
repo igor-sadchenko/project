@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<server>
+		<tcp addr="0.0.0.0:9801" enable="true"/>
+	</server>
+	<system>
+		<api path="C:\c.object.setup\shared.api\"/>
+		<log enable="true"/>
+		<followcon pathname="data\follow.con.bin"/>
+		<followrecord path="data\followrecord\"/>
+		<system_setup pathname="data\follow.system.setup.xml"/>
+	</system>
+	<clients>
+		<client id="201" username="Admin" password="abc123" identify="Administrator"/>
+		<client id="202" username="Admin" password="abc123" identify="Administrator"/>
+		<client id="203" username="Admin" password="abc123" identify="Administrator"/>
+		<client id="204" username="Admin" password="abc123" identify="Administrator"/>
+		<client id="205" username="Admin" password="abc123" identify="Administrator"/>
+		<client id="206" username="Admin" password="abc123" identify="Administrator"/>
+	</clients>
+</setup>
+
+

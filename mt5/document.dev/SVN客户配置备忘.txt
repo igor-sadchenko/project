@@ -1,0 +1,3 @@
+http://www.skstu.com/svn/release/hooyuen
+username: hooyuen
+password: abc123

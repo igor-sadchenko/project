@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="20">
+		<!--跟单关系-->
+		<Label name="DEF_A342DF16ECC84D60E04A1ED50608896B" text="" textcolor="#FFCDBE70" font="23" align="center"/>	
+		<!--跟单开关-->
+		<Label name="DEF_963EFA69E278CD1155AC76C4EBEC9376" text="" textcolor="#FFCDBE70" font="23" align="center"/>	
+		<!--强跟开关-->
+		<Label name="DEF_FA9A5A6CB1914A323C7D89C04876649A" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--方向类型-->
+		<Label name="DEF_6ECC31A5BDCB11AB5AA7738A6C6396B9" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--多空类型-->
+		<Label name="DEF_3F346FFEDFE756B92F5A03E57425BE26" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--最大阀值-->
+		<Label name="DEF_53FA8DFCF070E33B7F97A3F997BB42BE" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--最小阀值-->
+		<Label name="DEF_951A56DAB5F4544C403268BB1C2B26D6" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--跟随类型-->
+		<Label name="DEF_4D8D63E4C550650B3F87ED63671E6AEB" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--下单比例-->
+		<Label name="DEF_1175CA3BC615F601DA5A2639F080E8D5" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--固定手数-->
+		<Label name="DEF_F6695B34D484B2131BBFEFFE6E12CB67" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--最小手数-->
+		<Label name="DEF_EAE26B56A97B758401B9062686536794" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--最大手数-->
+		<Label name="DEF_B19FD83748084589C79EFF1A92DB7735" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--止盈止损-->
+		<Label name="DEF_75D730AD3D0F0E56363C54565092ED6D" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--点差校正-->
+		<Label name="DEF_F852E36B7F57C543456D12F2AE99ACF6" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+		<!--更新时间-->
+		<Label name="DEF_76F0E723BE7CC7B674C20C18DC652E9A" text="" textcolor="#FFCDBE70" font="23" align="center"/>		
+	</ListContainerElement>
+</Window>

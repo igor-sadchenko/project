@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ListContainerElement height="150" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+		<VerticalLayout>
+			<HorizontalLayout height="50">
+				<List name="DEF_69F087E67D2D28F7B24D16DB549F9D7A" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="false" hscrollbar="false" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="时间" textcolor="#FFFFFFFF" width="150" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="品种" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="交易所" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="数量" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="价格" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="多空" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="开平" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="定单号" textcolor="#FFFFFFFF" width="200" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+						<ListHeaderItem text="原因" textcolor="#FFFFFFFF" width="200" align="center" textpadding="0,0,0,0" />
+						<Control width="1" bkcolor="#FF3C3C3C"/>
+					</ListHeader>
+				</List>
+			</HorizontalLayout>
+			<HorizontalLayout height="50">
+				
+			</HorizontalLayout>
+			<HorizontalLayout height="50">
+				
+			</HorizontalLayout>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

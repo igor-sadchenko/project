@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="90" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+				<Control width="5"/>
+				<Label height="20" text="桥系统产品" textcolor="#FFCD0000" font="5" align="left"/>					
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="系统产品ID" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="120" name="DEF_8199818406345AC3B8C7D7AF03360488" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				<Control bkcolor="#FF3C3C3C" width="1"/>
+				<Label width="70" text="合约名字" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<Edit width="130" name="DEF_E4311B543C917BD2BDFA2FF6D3657B0E" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>				
+			</HorizontalLayout>	
+			<Control height="5"/>
+			<HorizontalLayout height="20">
+				<Label width="80" text="报价源指定" textcolor="#FFFFFFFF" font="23" align="center"/>
+				<HorizontalLayout>
+					<Combo float="true" name="DEF_1D9F879E49082A7DF9DEA84ED6B4D72D" pos="0,0,120,20" bkimage="file='images/toolbar/arrow_down_16px_1181456_easyicon.net.png' source='0,0,16,16' dest='103,2,119,18'" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="1" font="1" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					</Combo>
+					<Edit float="true" name="DEF_614824636501ABD29D5166D168F72CBC" text="默认" align="center" enabled="false" pos="0,0,80,20" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>	
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

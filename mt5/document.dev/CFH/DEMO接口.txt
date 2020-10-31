@@ -1,0 +1,55 @@
+Please find the following credentials for the second demo FIX,
+
+----------------- FIX Connection -----------------
+FIX Sender Comp ID:    HYdemo2
+FIX username:    HYdemo2
+FIX password:        J3s5m7pp
+Price Comp ID:    CfhDemoPrices
+Order Comp ID:    CfhDemoOrders
+Connection Address:    3093.DemoFixGW.com
+Port:        5200
+FIX Pricing Type:    MarketData
+Depth of Book :    5
+--------------------------------------------------
+
+The existing one is still disabled, tried to enable it but the system could not take the action. I have created the second one to replace that.
+
+----------------- FIX Connection -----------------
+FIX Sender Comp ID:    HYdemo1
+FIX username:    HYdemo1
+FIX password:        km38e1A7
+Price Comp ID:    CfhDemoPrices
+Order Comp ID:    CfhDemoOrders
+Connection Address:    3094.DemoFixGW.com
+Port:        5200
+FIX Pricing Type:    MarketData
+Depth of Book :    5
+--------------------------------------------------
+DEMO 客户端
+
+HooDemo_569 HooDemo_568
+都上去了 密码改变为
+Pa$$w0rd
+
+
+DEMO FIX 接口
+
+FIX Connection
+ FIX Comp ID
+SenderCompID (49) Hooyuengroup_Demo3 
+ FIX Username
+Username (553) Hooyuengroup_Demo3 
+ Price Comp ID
+TargetCompID (56) CfhDemoPrices 
+ Order Comp ID
+TargetCompID (56) CfhDemoOrders 
+ Connection Address
+SocketConnectHost/IP 3261.DemoFixGW.com 
+ Port Number
+SocketConnectPort 5200 
+ FIX Pricing Type MarketData 
+ Depth of Book Enabled Yes 
+ 
+ ----------
+g9Sf5FhX
+--------------------------------------------------

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Font id="22" name="微软雅黑" size="12" bold="true"/>
+	<Font id="23" name="黑体" size="12" bold="true"/>
+	<Font id="24" name="微软雅黑" size="12" bold="true"/>
+	<Font id="25" name="微软雅黑" size="13" bold="true"/>
+	<Font id="26" name="黑体" size="14" bold="true" shared="true"/>
+	
+	<ListContainerElement height="0" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<HorizontalLayout height="24" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1" borderround="0,0" inset="0,0,0,0">
+				<Label name="DEF_2EEE5512185F37D0E06CC37CCF67C090" text="新建配置" font="0" textcolor="#FF6F6F6F" padding="2,2,0,0"/>
+			</HorizontalLayout>
+			<VerticalLayout>
+				<Control height="7"/><!--跟单开关-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_11D76826C9728307E9509DA8B1B67616" text="跟单开关" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666" selected="true"/>
+						<Option name="DEF_F2B7998118BCFA412A5F489CCAF444F2" text="启用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_D5C5CEE3CA0B6DC8C34A93021FB6FED8" selected="true"/>
+						<Option name="DEF_9B73723DD4753563489F46CD07B5A0CF" text="禁用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_D5C5CEE3CA0B6DC8C34A93021FB6FED8"/>							
+					</HorizontalLayout>
+				<Control height="4"/><!--强跟开关-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_38265F48F077522D8FB292A19C922937" text="强跟开关" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>
+						<Option name="DEF_2C29C48A8359E0EC265347A7E89B2F16" text="启用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_881FE3AD50031B5AE4EE0E5024FA7839"/>
+						<Option name="DEF_3AEF3AF319B23570C63DCA46878B4CDE" text="禁用" width="60" textpadding="2,0,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_881FE3AD50031B5AE4EE0E5024FA7839" selected="true"/>							
+					</HorizontalLayout>
+				<Control height="4"/><!--信号帐号-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_DF9B02AC255E5BFAB6D0C4E21ABC8585" text="信号帐号" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>
+						<ComboBox name="DEF_5794160EA18BAE4F664BFA8BCA6878E8" visible="false" dropboxsize="0,400" itemfont="26" width="120" textpadding="2,-2,0,0" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" itemhotbkcolor="#FF778899" itemselectedbkcolor="#FF800000" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF"/>							
+						<Edit name="DEF_3F7E9179BC7A289837CAEC89B009C958" visible="true" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>					
+						<!--
+						<Edit name="DEF_01A2D52B0F64FEBACBA573D807F173D7" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+						-->
+					</HorizontalLayout>
+				<Control height="4"/><!--跟随帐号-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_DD34F9DEBE393369139C9B57F21B1D14" text="跟随帐号" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>
+						<ComboBox name="DEF_B2E5B8B668DAE8F60F357050099B6D8B" visible="false" dropboxsize="0,400" itemfont="26" width="120" textpadding="2,-2,0,0" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" itemhotbkcolor="#FF778899" itemselectedbkcolor="#FF800000" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF"/>
+						<Edit name="DEF_6D9D4D263116926A47CA77ACB833BF1C" visible="true" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>					
+						<!--
+						<Edit name="DEF_B5EFB3EC4B18CB949F4BE8730A2F4F0D" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+						-->
+					</HorizontalLayout>
+				<Control height="4"/><!--跟随方向-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_A5A4A781A4DAB741483AD4A31271C912" text="跟随方向" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>							
+						<Option name="DEF_AF871C850A02A4E34EF9DDAFED991BE9" textpadding="0,0,0,0" text="正向" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_10EBD9FFDFC71CE15645EC4FC7573E7C" selected="true"/>
+						<Option name="DEF_73F8C0D042DAA967DC47ACA426EE377D" textpadding="0,0,0,0" text="反向" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_10EBD9FFDFC71CE15645EC4FC7573E7C"/>							
+					</HorizontalLayout>
+				<Control height="4"/><!--多空方向-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_9B195D17BA3ADB666CCED9FD3465D1CB" text="多空方向" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Option name="DEF_9F3757C4741E95403CC4F7877F7A66C3" textpadding="0,0,0,0" text="全跟" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_DB8A6A28B427E7C65FD6D38E65F56401" selected="true"/>
+						<Option name="DEF_B705A60256D3C3E3464588EF853D24F3" textpadding="0,0,0,0" text="跟多" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_DB8A6A28B427E7C65FD6D38E65F56401"/>	
+						<Option name="DEF_86ACFC2BB8E140F23C56C120C221B4BC" textpadding="0,0,0,0" text="跟空" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_DB8A6A28B427E7C65FD6D38E65F56401"/>									
+					</HorizontalLayout>
+				<Control height="4"/><!--最大阀值-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_21AC4FAF302ADD656C48A62A502009D3" text="最大阀值" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_7F97CD1778B9D4BE9EC8E23FEE336B48" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*数量阀值 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--最小阀值-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_2A42E89B34B0571E459A5E2D15CC84E3" text="最小阀值" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_5C46AAB7E6E548870319607A28AAD2D0" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*数量阀值 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--跟随类型-->					
+					<HorizontalLayout height="20" >
+						<Option name="DEF_092ACBFCCA682C4BF15A0CD3476CA73E" text="跟随类型" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Option name="DEF_F8958799EBD889CAEA5AAD0EFA34BC94" textpadding="5,0,0,0" text="固定手数" width="80" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_6F032B6D338FC9A9B39862E6714D1F9D"/>
+						<Option name="DEF_DAEFA0E14135834DD76BB2C69B1C77FD" textpadding="5,0,0,0" text="成交比例" width="80" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_6F032B6D338FC9A9B39862E6714D1F9D" selected="true"/>	
+						<Option name="DEF_1C5C48C2A89F06D7D15E2C2EEB91AA43" textpadding="5,0,0,0" text="混合使用" width="80" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_6F032B6D338FC9A9B39862E6714D1F9D"/>									
+					</HorizontalLayout>
+				<Control height="4"/><!--下单比例-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_3733C5A2B03471538A0BB8D4D74432D2" text="下单比例" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_F82FECD30755D5E09C234BF051BA8F3D" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*信号数量比例 1即100%*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--固定手数-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_305F64C383ACC6DDDC713E7A2B6B834F" text="固定手数" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_8EF6A21FB9FE3B15581F1E45B1D2F58F" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+					</HorizontalLayout>
+				<Control height="4"/><!--最小手数-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_CE234EE196E9D28CAF50CCE2C22BA4A2" text="最小手数" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_067173C7CFD5F93445FF7114B87CA045" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*数量范围 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--最大手数-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_90BAEA988BC99CFD4AF3AB48ABAE28E1" text="最大手数" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_D35797EA888634519D504A4FEC272437" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*数量范围 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--后缀校正-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_1390C3D72A58F57B5C80F07CDDD6B072" text="后缀校正" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_9D3826902B29C4BF7EF9553D4ADCE2D2" font="2" width="230" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+					</HorizontalLayout>
+				<Control height="4"/><!--只跟品种-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_1A77C31B27655543348E2D788F33EF5C" text="只跟品种" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_4A4E04C8E1C1B0D6034A66CD53BE7716" font="2" width="230" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+					</HorizontalLayout>
+				<Control height="4"/><!--不跟品种-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_C10CD6E26EFBAFBDC879C052E32E4DC9" text="不跟品种" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_649419F876DFEF711D1DE21B94FB50DD" font="2" width="230" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+					</HorizontalLayout>
+				<Control height="4"/><!--仓位限定-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_DDDDB32C7AF3D7471823C9BFEA4527E3" text="仓位阀值" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Edit name="DEF_901ADEC2BB6996595388B780C65E29CA" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*跟单持仓个数阀值 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--时段开关-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_E07A5515F677A577E2CCC30D610C9116" text="时段开关" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>														
+						<Option name="DEF_E1F2BCF5C64DD0CB47084874E1B8A94D" textpadding="0,0,0,0" text="启用" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_4397B7E58ADB042884347528DDA28B58"/>
+						<Option name="DEF_630D8ED7CFAF18CD2DF7F4EB7708FD7B" textpadding="0,0,0,0" text="禁用" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_4397B7E58ADB042884347528DDA28B58" selected="true"/>	
+					</HorizontalLayout>
+				<Control height="4"/><!--时段设置-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_9645F768548CEA37A2CDFF88EF76B643" text="时段设置" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>												
+						<Edit name="DEF_ED60DB5B2FFCAAFC31AEDD998003BFC4" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+						<Edit name="DEF_18AF32058A212DAC49DD0B3EAEA01B98" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>						
+						<Label text="/*开始时间 < 结束时间*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--时段设置-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_126CDAFF764701DE087666454376A46D" text="时段设置" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Edit name="DEF_6ACBBEB43583AB333EA7F78CDFC83898" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+						<Edit name="DEF_6D79808AAE45F4C6A0576A98A48F87F9" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>						
+						<Label text="/*开始时间 < 结束时间*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--时段设置-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_FB1B6150F881625E3461BC0D216C01DD" text="时段设置" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Edit name="DEF_B4743DD2747F626BEDFB383B963A9C87" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+						<Edit name="DEF_53B6D4A8B02AC82700F95ABCF8ED69B5" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>						
+						<Label text="/*开始时间 < 结束时间*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/><!--盈损开关-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_08668C34E15FF25348F5B0BF89B07569" text="止盈止损" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Option name="DEF_9A1DC47B5592E47FEB5B1C2EF502ED3A" textpadding="0,0,0,0" text="启用" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'" group="DEF_D1CF394F493F11FD305E83EFFE2C5F11"/>
+						<Option name="DEF_80A5644F3A576E292723DE5F2DC126F6" textpadding="0,0,0,0" text="禁用" width="60" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"  group="DEF_D1CF394F493F11FD305E83EFFE2C5F11" selected="true"/>	
+					</HorizontalLayout>
+				<Control height="4"/><!--点差校正-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_CE57C33569438AC604FD79741F838B97" text="点差校正" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Edit name="DEF_27210D641F5C62325E7B2716BA2C04C5" font="23" width="120" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*点差浮动价 0或空为禁用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<!--
+				<Control height="4"/>
+					<HorizontalLayout height="20" >
+						<Option name="DEF_7E02EBB9999121BF9B4E212E1D96D70B" text="止盈价格" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Edit name="DEF_06E21E889EAEFBEA650B08E6E2B8E11E" font="23" width="120" text="0.0" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*点差浮动价 0或空为使用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>
+				<Control height="4"/>
+					<HorizontalLayout height="20" >
+						<Option name="DEF_99BEDDF55C272F3BFB376D0E8FBFE32E" text="止损价格" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<Edit name="DEF_3F47DDE2AD43F44A64354A551B06FA47" font="23" width="120" text="0.0" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+						<Label text="/*点差浮动价 0或空为使用*/" textcolor="#FF808080" font="24"/>
+					</HorizontalLayout>-->
+				<Control height="4"/><!--注释信息-->
+					<HorizontalLayout height="20" >
+						<Option name="DEF_7DF7F6ADF3C566E10822C0D3DCF07AC5" text="注释信息" padding="2,1,1,1" width="60" font="22" textcolor="#FFFFFFFF" selectedbkcolor="#FFCD0000" hotbkcolor="#FF808080" pushedbkcolor="#FFFF0000" group="DEF_526C22B311D104C58BEA8A4BA045E666"/>	
+						<!-- "@本定单由 '跟单系统®' 产生" -->
+						<Edit name="DEF_59E8CCC844803415E9EBA48164F665A9" font="2" width="230" text="" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+					</HorizontalLayout>					
+				<Control height="4"/>
+			</VerticalLayout>
+			<HorizontalLayout height="10"/>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

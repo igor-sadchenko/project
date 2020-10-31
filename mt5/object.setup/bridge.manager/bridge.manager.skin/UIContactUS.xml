@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<VerticalLayout>
+		<HorizontalLayout>
+		</HorizontalLayout>	
+		<HorizontalLayout height="100">
+			<Control/>
+			<Label height="20" width="150" text="桥接清算系统®" textcolor="#FFCDBE70" font="3" align="center"/>
+			<Label height="20" width="100" text="新生联创" textcolor="#FFFFD700" font="3" align="center"/>
+			<Label height="20" width="150" text="WWW.SKSTU.COM" textcolor="#FF00FF00" font="3" align="center"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

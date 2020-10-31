@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="20">
+		<VerticalLayout>
+			<Label width="100" height="20" text="系统产品" textcolor="#FFFFFFFF" font="1" align="center"/>		
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

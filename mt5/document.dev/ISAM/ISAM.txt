@@ -1,0 +1,28 @@
+FIX API:
+Quoting:
+SocketConnectHost=cert.isprimefx.com
+SocketConnectPort=28113
+SocketUseSSL=Y
+TargetCompID=ISAMCERT
+SenderCompID=UCF_LQ1
+ 
+Trading:
+SocketConnectHost=cert.isprimefx.com
+SocketConnectPort=28112
+SocketUseSSL=Y
+TargetCompID=ISAMCERT
+SenderCompID=UCF_LT1
+
+
+Tag #1: UCF001
+ 
+ 
+Hooyuen MT4 demo
+ 
+用户名: 8355
+ 
+密码: N6wYOey
+ 
+服务器: 216.93.247.117
+ 
+下载: download.mql5.com/cdn/web/is.prime.limited/mt4/isprime4setup.exe

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1" borderround="0,0" inset="0,0,0,0">
+		<HorizontalLayout/>
+		<VerticalLayout>
+			<VerticalLayout/>
+			<VerticalLayout>
+				<HorizontalLayout height="20">
+					<Label text="帐户:" textcolor="#FFFFFFFF" font="1" width="50" align="center"/>
+					<Edit name="DEF_723FDC115E619037612DEBF18B77E163" text="Admin" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				</HorizontalLayout>
+				<Control height="10"/>
+				<HorizontalLayout height="20">
+					<Label text="密码:" textcolor="#FFFFFFFF" font="1" width="50" align="center"/>
+					<Edit name="DEF_30C0EE6E80F58A33C84F9448B12D4422" password="true" text="abc123456789" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+				</HorizontalLayout>
+				<Control height="20"/>
+				<HorizontalLayout height="20">
+					<Control/>
+					<Button name="DEF_95DCE79DA85B064019873074CC016F9D" width="100" text="登陆" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<VerticalLayout/>
+		</VerticalLayout>
+		<HorizontalLayout/>
+	</HorizontalLayout>
+</Window>

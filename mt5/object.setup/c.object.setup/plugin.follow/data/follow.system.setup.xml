@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ANSI" ?>
+<setup>
+	<SystemSwitch>0</SystemSwitch>
+	<PatchInAction>1</PatchInAction>
+	<AutoPositionCloseSwitch>0</AutoPositionCloseSwitch>
+	<FollowToSignalExchangeSwitch>1</FollowToSignalExchangeSwitch>
+	<CorrectionSLTPSwitch>0</CorrectionSLTPSwitch>
+	<TimeSLTPCorrectionInterval>10000</TimeSLTPCorrectionInterval>
+	<TimeAutoPositionCloseCheck>10000</TimeAutoPositionCloseCheck>
+</setup>

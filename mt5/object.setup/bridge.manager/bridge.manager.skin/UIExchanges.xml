@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<VerticalLayout>
+		<HorizontalLayout>
+			<VerticalLayout width="400">
+				<List name="DEF_C46E4DFFE3D9E37D1F48119C82C3A3E5" header="show" bkcolor="#FF1E1E1E" vscrollbar="true" hscrollbar="false">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="ID" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="交易所" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="模块" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+					</ListHeader>
+				</List>
+			</VerticalLayout>
+			<Control width="10"/>
+			<VerticalLayout width="500" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+				<Control height="5"/>
+				<HorizontalLayout height="30">
+					<Control width="5"/>
+					<Label height="20" text="指定有哪些MT5帐户抛单到该交易所" textcolor="#FFFF0000" font="3" align="left"/>
+				</HorizontalLayout>
+				<Control height="5"/>
+				<HorizontalLayout height="20">
+					<Control width="5"/>
+					<Label width="80" text="指定MT帐户" textcolor="#FFFFFFFF" font="23" align="center"/>										
+					<Edit width="120" name="DEF_EDBF99831BF47D7A5A5A8745A0C1A911" enabled="true" bkimage="file='images/toolbar/search_16px.png' source='0,0,16,16' dest='103,2,119,18'" textpadding="3,0,23,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"/>
+					<Control width="5"/>
+					<Label text=" /*点选搜索建议内容启用推荐数据*/" textcolor="#FF808080" align="left"/>
+				</HorizontalLayout>
+				<Control height="5"/>
+				<HorizontalLayout height="20">
+					<Control/>
+					<Button name="DEF_7777D51FF50D1365FF42A3D2BE1DC77A" width="70" text="添加" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					<Control width="5"/>
+					<Button name="DEF_F8E6EB00B563D548AC4286653993EA35" width="70" text="移除" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>			
+					<Control width="5"/>
+				</HorizontalLayout>
+				<Control height="5"/>
+				<HorizontalLayout>
+				<List name="DEF_1F39EEE70D997FA56E9855028409F4B8" width="200" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="帐户搜索建议" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,0" />
+					</ListHeader>
+				</List>
+				<Control width="5"/>
+				<!--
+				<List name="DEF_988F50A8522653EF50682E196F1EF500" header="hidden" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+				-->
+				<List name="DEF_988F50A8522653EF50682E196F1EF500" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="帐户" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="帐户组" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,0" />
+					</ListHeader>
+					<HorizontalLayout height="20">
+					</HorizontalLayout>
+				</List>
+				</HorizontalLayout>
+				<Control height="100"/>
+			</VerticalLayout>
+			<!--
+			<Control width="10"/>
+			<VerticalLayout width="500" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="1">
+				<Control height="5"/>
+				<HorizontalLayout height="30">
+					<Control width="5"/>
+					<Label height="20" text="过桥合约品种映射到交易所的持仓情况" textcolor="#FFFF0000" font="3" align="left"/>
+				</HorizontalLayout>
+				<Control height="5"/>
+				<List name="DEF_487153CB7FF3A366B05C7801089E7192" bkcolor="#FF1E1E1E" inset="1,1,1,1" bordersize="1" bordercolor="#FF3C3C3C" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="left"  itemaltbk="true" itemshowrowline="true" itemshowcolumnline="true" itemhotbkcolor="#FF4F4F4F" itemselectedbkcolor="#FF919191" itemlinecolor="#FF3C3C3C" itemfont="11" itemhottextcolor="#FF000000" itemtextcolor="#FFCCCCCC" itemselectedtextcolor="#FF000000" itemalign="center">
+					<ListHeader height="20" bkcolor="#FF1E1E1E" bordersize="1" bordercolor="#FF3C3C3C">
+						<ListHeaderItem text="合约名字" textcolor="#FFFFFFFF" width="100" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="多空类型" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="持仓净额" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="开仓价格" textcolor="#FFFFFFFF" width="70" align="center" textpadding="0,0,0,0" />
+						<ListHeaderItem text="交易单号" textcolor="#FFFFFFFF" width="200" align="center" textpadding="0,0,0,0" />
+					</ListHeader>
+					<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+						<Control/>
+						<Button name="DEF_CF98D901196F2C350DA8FF335C1C0125" width="100" text="刷新持仓" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>	
+					</HorizontalLayout>
+				</List>
+				<Control height="100"/>
+			</VerticalLayout>
+			-->
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="20" bordercolor="#FF3C3C3C" bordersize="1">
+			<Control/>
+			<Button name="DEF_10A646A84BC45A631367B3280462E820" width="120" text="刷新在线交易所" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF800000" hotbkcolor="#FFB22222" pushedbkcolor="#FFFF0000"/>				
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

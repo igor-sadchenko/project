@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout>
+		<Control width="10" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C"/>
+		<VerticalLayout width="600" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="0">
+			<!--系统平台模式-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="100" showhtml="true" text="<c #B22222><b>1、</b></c>系统平台模式:" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_8949506871A4AF501EEA44A91D231E72" enabled="false" width="120" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="[STP]直接交易员" userdata="1" selected="true"/>
+					<ListLabelElement text="[ECN]自动撮合成交" userdata="2"/>
+					<ListLabelElement text="[MTF]多边交易" userdata="4"/>
+					<ListLabelElement text="[MM]做市商" userdata="8"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="200" showhtml="true" text="模式." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+			
+			<!--系统时间-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="85" showhtml="true" text="<c #B22222><b>2、</b></c>服务器时间:" textcolor="#FFFFFFFF" align="left"/>
+				<Edit width="210" name="DEF_FC5908D5D9AC711A438DE33A445AE75E" enabled="false" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" nativebkcolor="#FF323232"/>	
+				<Control width="5"/>
+				<Button name="DEF_B4E29CD7BB8744ADF5238569204977C8" width="60" text="刷新" font="4" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+			</HorizontalLayout>
+			
+			<!--网关定单任务超时间间隔-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="120" showhtml="true" text="<c #B22222><b>3、</b></c>交易订单任务超过" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_B82C33159C313613E3BBEA7E7AAA59AE" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="30 秒" userdata="30000" selected="true"/>
+					<ListLabelElement text="60 秒" userdata="60000"/>
+					<ListLabelElement text="90 秒" userdata="90000"/>
+					<ListLabelElement text="120 秒" userdata="120000"/>
+					<ListLabelElement text="150 秒" userdata="150000"/>
+				</Combo>
+				<Control width="5"/>
+				<Label showhtml="true" text="未得到响应,确认为超时定单." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>			
+			
+			<!--交易所报价超时间间隔-->
+			<Control height="10"/>	
+			<HorizontalLayout height="20">
+				<Label width="115" showhtml="true" text="<c #B22222><b>4、</b></c>交易所报价超过" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_C120AFB5960DFC72F1253071D90AAE90" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="1 分钟" userdata="60000" selected="true"/>
+					<ListLabelElement text="5 分钟" userdata="300000"/>
+					<ListLabelElement text="10 分钟" userdata="600000"/>
+					<ListLabelElement text="30 分钟" userdata="1800000"/>
+					<ListLabelElement text="1 小时" userdata="3600000"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="200" showhtml="true" text="未激活,则预警提示." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+			
+			<!--定单类型-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20">
+				<Label width="80" showhtml="true" text="<c #B22222><b>5、</b></c>网关订单是" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_8628E28E9EF8CFA1307E0C8DE875A5A1" enabled="false" width="50" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="市价" userdata="1" selected="true"/>
+					<ListLabelElement text="限价" userdata="2"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="113" showhtml="true" text="执行类型,有效期是" textcolor="#FFFFFFFF" align="left"/>
+				<!--Market-->
+				<Combo name="DEF_89052B592B0691BFBD292D4E210BCB1E" visible="true" width="160" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="(IOC)[立即成交,否则撤销]" userdata="3" selected="true"/>
+					<ListLabelElement text="(FOK)[持仓填满,否则撤销]" userdata="4"/>
+				</Combo>
+				<!--Limit-->
+				<Combo name="DEF_7749E33DB5DD08290AF3CE2862426735" visible="false" width="160" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="(DAY)[仅当天交易日,有效]" userdata="0"/>
+					<ListLabelElement text="(GTC)[等待成交,直到撤销]" userdata="1"/>
+					<ListLabelElement text="(IOC)[立即成交,否则撤销]" userdata="3" selected="true"/>
+					<ListLabelElement text="(FOK)[持仓填满,否则撤销]" userdata="4"/>
+				</Combo>
+				<!--Stop-->
+				<Combo name="DEF_2972D164E258EDC8633348BE244E297D" visible="false" width="160" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="(DAY)[仅当天交易日,有效]" userdata="0" selected="true"/>
+					<ListLabelElement text="(GTC)[等待成交,直到撤销]" userdata="1"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="80" text="时间类型." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>			
+			
+			<!--聚合报价开关-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20">			
+				<Label width="100" showhtml="true" text="<c #B22222><b>6、</b></c>聚合报价开关:" textcolor="#FFFFFFFF" align="left"/>
+				<Option name="DEF_C7AE6101D6A5DAB2E0DB07649862FF88" text="开启" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'" group="DEF_CAEC7420B56A80CA47CF385AC0D8EE70" selected="true"/>
+				<Option name="DEF_F2B04474B2C0AA89BFCC9782FFDB0055" text="关闭" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'"  group="DEF_CAEC7420B56A80CA47CF385AC0D8EE70"/>												
+			</HorizontalLayout>
+			
+			<!--数据源点差处理模式-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20">			
+				<Label width="150" showhtml="true" text="<c #B22222><b>7、</b></c>数据源点差处理模式:" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_24F52A776278EC8486924DA8868D797A" visible="true" width="270" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="(系统)[在桥系统报价层处理点差配置]" userdata="1" selected="true"/>
+					<ListLabelElement text="(平台)[在MT5平台最终报价层处理点差配置]" userdata="2"/>
+				</Combo>
+			</HorizontalLayout>
+			
+						
+			<!--自动调仓开关-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20" >
+				<Label width="100" showhtml="true" text="<c #B22222><b>8、</b></c>自动调仓开关:" textcolor="#FFFFFFFF" align="left"/>
+				<Option name="DEF_6B742269FFB2B7574EA76412968B1BC7" enabled="true" text="开启" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'" group="DEF_64F6996CFB622A24F953C646C2813267" selected="true"/>
+				<Option name="DEF_1AB4A38CE223585E8EDF5DF50DC0AE33" enabled="true" text="关闭" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'"  group="DEF_64F6996CFB622A24F953C646C2813267"/>												
+			
+				<Label text=" /*启用: 现有持仓平仓选最优价LP,反向开仓再平仓.*/" textcolor="#FF00FF00" align="left"/>
+			</HorizontalLayout>
+					
+			<!--网关定单成交价格-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20">
+				<Label width="110" showhtml="true" text="<c #B22222><b>9、</b></c>网关订单使用" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_5BE420660E68327B1CB45B6D68B66E0A" showhtml="true" enabled="true" width="80" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement showhtml="true" text="网关下单价" userdata="2" selected="true"/>
+					<ListLabelElement showhtml="true" text="LP成交均价" userdata="0"/>
+					<ListLabelElement showhtml="true" text="LP成交现价" userdata="1"/>
+				</Combo>
+				<Control width="5"/>
+				<Label text="做为成交价,如果该价格无效(例如EA挂单情况),则修正为LP成交均价." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>	
+
+			<!--指定帐户过桥定单组合类型-->
+			<Control height="10"/>		
+			<VerticalLayout height="55">
+				<HorizontalLayout height="20" >
+					<Label width="133" showhtml="true" text="<c #B22222><b>10、</b></c>指定过桥抛单模式:" textcolor="#FFFFFFFF" align="left"/>
+					<Combo name="DEF_21F2213FFDB0B20283BB2BFDF76DB275" showhtml="true" enabled="true" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+						<ListLabelElement showhtml="true" text="逐个抛单" userdata="0" selected="true"/>
+						<ListLabelElement showhtml="true" text="组合抛单" userdata="1"/>
+					</Combo>
+					<Control width="5"/>
+					<Label showhtml="true" text=".除以下MT帐户 <c #FF4500><b>('\'分隔)</b></c> 以外:" textcolor="#FFFFFFFF" align="left"/>
+				</HorizontalLayout>
+				<Control height="10"/>
+				<HorizontalLayout>
+					<Control width="20"/>
+					<Edit height="25" name="DEF_27AEAC0F9FAB35DA6E71E6B6A1210779" enabled="true" textpadding="3,0,3,0" textcolor="#FFFFFFFF" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" nativebkcolor="#FF323232"/>	
+				</HorizontalLayout>
+			</VerticalLayout>	
+			
+			<!--部分成交订单选项-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20" >
+				<Label width="145" showhtml="true" text="<c #B22222><b>11、</b></c>产生部分成交订单时" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_3F5761025416D17C5803F4107B5F8E87" showhtml="true" enabled="true" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement showhtml="true" text="放弃请求" userdata="0" selected="true"/>
+					<ListLabelElement showhtml="true" text="继续请求" userdata="1"/>
+				</Combo>
+				<Control width="5"/>
+				<Label width="85" text="每次请求延迟" textcolor="#FFFFFFFF" align="left"/>
+				<Combo name="DEF_8751D5C2DCCF52E6CBD2AB49DB77B602" width="70" textcolor="#FFFFFFFF" textpadding="5,0,0,0" padding="0,0,0,0" vscrollbar="true" hscrollBar="true" itemfont="4" font="4" itemtextpadding="5,5,0,0" bkcolor="#FF323232" bordersize="1" bordercolor="#FF778899" itemhotbkcolor="#FF3C3C3C" itemselectedbkcolor="#FF3C3C3C" itemhottextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF">
+					<ListLabelElement text="1 秒" userdata="1000"/>
+					<ListLabelElement text="2 秒" userdata="2000"/>
+					<ListLabelElement text="3 秒" userdata="3000" selected="true"/>
+					<ListLabelElement text="4 秒" userdata="4000"/>
+					<ListLabelElement text="5 秒" userdata="5000"/>
+				</Combo>
+				<Control width="5"/>
+				<Label text="直到填满订单." textcolor="#FFFFFFFF" align="left"/>
+			</HorizontalLayout>
+				
+									
+			<!--桥系统组件工作时间段-->
+			<Control height="10"/>		
+			<VerticalLayout height="200">
+				<Label width="180" showhtml="true" text="<c #B22222><b>12、</b></c>系统定单交易工作时间段:" textcolor="#FFFFFFFF" align="left"/>	
+				<HorizontalLayout>
+					<Control width="20"/>
+					<VerticalLayout>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 一:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_F15D715FF21F3992F459BD4AC7C135A0" userdata="1" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_C9AA0A94D77F635F41CAD104C7C8FCA7" userdata="1" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 二:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_C6F46D1C4AE3828848DDFE312DEAFA28" font="23" userdata="2" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_C78F35DDA841A64330346613C34274EF" font="23" userdata="2" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 三:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_6FC1B276BA7CC92309C0E8E2E90F3FAA" userdata="3" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_D877E89FFE9A73B20C7DA51400BFF14F" userdata="3" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 四:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_C26809B5D882985AC69F2DD2543B7406" userdata="4" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_14D9DB7539860A13FFD0D50DF42B690F" userdata="4" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 五:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_05D9388B14343824F5DF71B204D875DA" userdata="5" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_55F0125614A9FBCF5D062CBBAE16EF02" userdata="5" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 六:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_DC396A58E7D0CA95E010A49BE1370AE3" userdata="6" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_1024DBA72F584A4B9B667E97354CD117" userdata="6" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="20">
+							<Label width="50" showhtml="true" text="<c #EEAD0E><b>周 日:</b></c>" textcolor="#FFFFFFFF" align="left"/>
+							<Edit name="DEF_2F50FE7DB9BACC7F35CA6926C0EDE13C" userdata="0" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>
+							<Label text="~" textcolor="#FFFFFFFF" textpadding="0,0,0,0" font="1" width="18" align="center"/>
+							<Edit name="DEF_C6465BB70F9EEB9A41DA4ED9119A573A" userdata="0" font="23" width="80" text="00:00:00" textpadding="3,1,3,1" textcolor="#FFFFFFFF" align="left" bkcolor="#FF323232" textbkcolor="#FF323232" bordersize="1" bordercolor="FF3C3C3C" nativebkcolor="#FF323232"></Edit>								
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<!--开发调试开关-->
+			<Control height="10"/>		
+			<HorizontalLayout height="20">			
+				<Label width="100" showhtml="true" text="<c #B22222><b>13、</b></c>开发调试模式:" textcolor="#FFFFFFFF" align="left"/>
+				<Option name="DEF_6377042096DC8814BC20775A000A0559" enabled="false" text="启用" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'" group="DEF_CF867639CC53B2DB568F7D7D1CCE7B6E"/>
+				<Option name="DEF_0D56334536ED73507BDCCAA975D24F51" enabled="false" text="禁用" width="50" textpadding="12,2,0,0" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,5,16,18'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,5,16,18'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,5,16,18'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,5,16,18'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,5,16,18'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,5,16,18'"  group="DEF_CF867639CC53B2DB568F7D7D1CCE7B6E" selected="true"/>												
+			</HorizontalLayout>
+			
+			<Control height="20"/>
+			<HorizontalLayout height="20">
+				<Control/>
+				<Button name="DEF_7C67F08158C0C564E126485C5427E9BE" width="100" text="确认修改" font="3" textcolor="0xFFFFFFFF" borderround="2,2" bkcolor="#FF8B0000" hotbkcolor="#FFFF0000" pushedbkcolor="#FFFF0000"/>
+			</HorizontalLayout>
+			
+			
+
+		</VerticalLayout>
+
+	
+		<Control width="10" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C"/>
+		<VerticalLayout >
+		</VerticalLayout>			
+	</HorizontalLayout>
+
+</Window>

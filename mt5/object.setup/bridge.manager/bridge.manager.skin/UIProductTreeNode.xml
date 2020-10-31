@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>						
+	<ListContainerElement height="20">
+		<Label name="DEF_A342DF16ECC84D60E04A1ED50608896B" showhtml="true" text="Symbol" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_963EFA69E278CD1155AC76C4EBEC9376" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_E2C2A58989612AE0F43D81B979A3BE98" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+		<Label name="DEF_5599F20AF76F15A37DAFCAEE5C402466" showhtml="true" text="-" textcolor="#FFCDBE70" font="23" align="center"/>
+	</ListContainerElement>
+</Window>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<ListContainerElement height="20" bkcolor="#FF1E1E1E" bordercolor="#FF3C3C3C" bordersize="0" borderround="0,0" inset="0,0,0,0">
+		<VerticalLayout>
+			<HorizontalLayout bordercolor="#FF3C3C3C" bordersize="1" bkcolor="#FF1C1C1C">
+				<Control width="5"/>
+				<Label name="DEF_2A4D7B3540BA2F4836402DE5BB690869" width="70" textcolor="#FFFFFFFF" font="4" align="center"/>
+				<Control width="10"/>
+				<Option name="DEF_A542CF3ECC4C7FB1D97F8D385084F699" EnableAutoCheck="true" width="50" textpadding="2,0,0,0" selected="false" textcolor="#FFFFFFFF" font="1" selectedimage="file='images/system/Check.png' source='0,52,13,65' dest='3,3,16,16'" selectedhotimage="file='images/system/Check.png' source='0,65,13,78' dest='3,3,16,16'" disabledimage="file='images/system/Check.png' source='0,39,13,52' dest='3,3,16,16'" pushedimage="file='images/system/Check.png' source='0,26,13,39' dest='3,3,16,16'" bkimage="file='images/system/Check.png' source='0,0,13,13' dest='3,3,16,16'" hotimage="file='images/system/Check.png' source='0,13,13,26' dest='3,3,16,16'"/>						
+			</HorizontalLayout>	
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>
