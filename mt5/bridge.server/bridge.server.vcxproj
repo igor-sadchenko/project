@@ -233,6 +233,9 @@
   <ItemGroup>
     <ResourceCompile Include="bridge.server.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\resource\images\red_128px_1071529_easyicon.net.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

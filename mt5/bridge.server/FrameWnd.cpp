@@ -682,10 +682,11 @@ namespace proxy {
 				nStatusPartsWidths[nCnt++] = (rtMainWnd.right - rtMainWnd.left) - (300 * i);
 			SendMessage(m_hStatusBar, SB_SETPARTS, ARRAYSIZE(nStatusPartsWidths), (LPARAM)nStatusPartsWidths);
 
+			auto pChildOnline = new ChildWndOnline(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Service Object Online"));
+			AppendChild(pChildOnline);
 			auto pChildLog = new ChildWndLog(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Server Log"));
 			AppendChild(pChildLog);
-			//auto pChildOnline = new ChildWndOnline(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Service Object Online"));
-			//AppendChild(pChildOnline);
+
 
 			CreateTaskBar(TEXT("桥系统服务®"));
 
@@ -827,16 +828,16 @@ namespace proxy {
 				{
 					::ShowWindow(hWnd, SW_HIDE);
 					DWORD dwStyle = ::GetWindowLong(hWnd, GWL_EXSTYLE);
-					::SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
-					if (!((dwStyle & WS_EX_TOPMOST) == WS_EX_TOPMOST))
-					{
-						::SetWindowPos(hWnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
-					}
+					//::SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
+					//if (!((dwStyle & WS_EX_TOPMOST) == WS_EX_TOPMOST))
+					//{
+					//	::SetWindowPos(hWnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
+					//}
 				}
 				else
 				{
 					::ShowWindow(hWnd, SW_SHOWNORMAL);
-					::SetWindowPos(hWnd, HWND_TOP, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE | SWP_DRAWFRAME);
+					::SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
 				}
 			}break;
 			case WM_RBUTTONDOWN:

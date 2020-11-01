@@ -2,7 +2,7 @@
 
 MTPluginParam ExtPluginDefaults[] =
 {
-	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_PATH_OBJ   ,L"C:\\sk.project.setup\\plugin.dealer.obj\\"},
+	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_PATH_OBJ   ,L"C:\\c.object.setup\\plugin.dealer\\"},
 	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_ROUTE_RULE_NAME  ,L"RouteRuleSK"},
 	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_DEALER_MANAGER_LOGIN  ,L"9999"},
 };

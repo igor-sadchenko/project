@@ -71,8 +71,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,20,1010,1018
- PRODUCTVERSION 1,20,1010,1018
+ FILEVERSION 1,20,111,1817
+ PRODUCTVERSION 1,20,111,1817
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -87,14 +87,14 @@ BEGIN
     BEGIN
         BLOCK "080404b0"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
-            VALUE "FileDescription", "TODO: <文件说明>"
-            VALUE "FileVersion", "1.20.1010.1018"
-            VALUE "InternalName", "sk.followobj.license.tool"
-            VALUE "LegalCopyright", "Copyright (C) 2020"
-            VALUE "OriginalFilename", "sk.followobj.license.tool"
-            VALUE "ProductName", "TODO: <产品名>"
-            VALUE "ProductVersion", "1.20.1010.1018"
+            VALUE "CompanyName", "XS?"
+            VALUE "FileDescription", "XS? Program(License) From Object"
+            VALUE "FileVersion", "1.20.111.1817"
+            VALUE "InternalName", "object.license.tool"
+            VALUE "LegalCopyright", "?XS Corporation. All rights reserved."
+            VALUE "OriginalFilename", "object.license.tool"
+            VALUE "ProductName", "XS? Program"
+            VALUE "ProductVersion", "1.20.111.1817"
         END
     END
     BLOCK "VarFileInfo"

@@ -194,6 +194,9 @@
   <ItemGroup>
     <ResourceCompile Include="object.license.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\resource\images\grey_128px_1071303_easyicon.net.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

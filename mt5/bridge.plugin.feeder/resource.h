@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ 生成的包含文件。
-// 供 sk.feeder.plugin.rc 使用
+// 供 bridge.plugin.feeder.rc 使用
 //
 
 // Next default values for new objects

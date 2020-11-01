@@ -2,7 +2,7 @@
 
 MTPluginParam ExtPluginDefaults[] =
 {
-	{ MTPluginParam::TYPE_STRING,  L"PathObj"   ,L"C:\\sk.project.setup\\plugin.follow.obj\\"},
+	{ MTPluginParam::TYPE_STRING,  L"PathObj"   ,L"C:\\c.object.setup\\plugin.follow\\"},
 };
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved) 

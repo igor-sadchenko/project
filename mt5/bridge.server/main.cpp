@@ -22,9 +22,9 @@ int WINAPI wWinMain
 	}
 
 #if defined(_DEBUG)
-	HINSTANCE hInstanceRes = ::LoadLibraryA("skapi.resource.dll");
+	HINSTANCE hInstanceRes = ::LoadLibraryA(R"(..\..\..\..\shared\x64\debug\shared.resource.dll)");
 #else
-	HINSTANCE hInstanceRes = ::LoadLibraryA((proxy::Global::GetSetup()->GetApiPath() + "skapi.resource.dll").c_str());
+	HINSTANCE hInstanceRes = ::LoadLibraryA((proxy::Global::GetSetup()->GetApiPath() + "shared.resource.dll").c_str());
 #endif
 	proxy::FrameWnd* pFrameWnd = new proxy::FrameWnd(
 		hInstance,

@@ -162,9 +162,12 @@ namespace cfh {
 		else
 		{
 			if (!::IsWindowVisible(Global::GetHwnd()))
+			{
 				::ShowWindow(Global::GetHwnd(), SW_SHOW);
+				::SetWindowPos(Global::GetHwnd(), HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+			}
+
 		}
-		//Global::Log(sk::EnLogType::EN_LOG_TYPE_TRACE)->info("{}", __FUNCTION__);
 	}
 	void TradeOrder::OnNetShutdown(const sk::network::Header& head, const sk::packet& pak)
 	{

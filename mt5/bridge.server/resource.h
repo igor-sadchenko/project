@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ 生成的包含文件。
-// 供 sk.bridge.proxy.rc 使用
+// 供 bridge.server.rc 使用
 //
 #define IDI_ICON1                       102
 #define IDI_MAIN                        102

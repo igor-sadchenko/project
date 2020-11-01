@@ -2,7 +2,7 @@
 
 MTPluginParam ExtPluginDefaults[] =
 {
-	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_PATH_OBJ   ,L"C:\\sk.project.setup\\plugin.feeder.obj\\"},
+	{ MTPluginParam::TYPE_STRING,  PLUGIN_PARAM_KEY_PATH_OBJ   ,L"C:\\c.object.setup\\plugin.feeder\\"},
 };
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved) {

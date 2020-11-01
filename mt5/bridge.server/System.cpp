@@ -54,7 +54,7 @@ namespace proxy {
 		m_IsOpenT.store(true);
 		m_Threads.emplace_back([this]() {ProcessT(); });
 		m_Threads.emplace_back([this]() {RecordT(); });
-		m_Threads.emplace_back([this]() {TradeOrderT(); });	
+		m_Threads.emplace_back([this]() {TradeOrderT(); });
 		m_Threads.emplace_back([this]() {MarketDataProcessT(); });
 
 		GetServer()->Open();
@@ -107,7 +107,7 @@ namespace proxy {
 	{
 		bool result = true;
 		Global::GetSetup()->m_ReadyContextMapQ.iterate(
-			[&](const auto&,auto& status,const auto&,auto& itbreak) 
+			[&](const auto&, auto& status, const auto&, auto& itbreak)
 			{
 				if (!status)
 				{
@@ -227,7 +227,7 @@ namespace proxy {
 
 			while (auto ack = OrderDispatchGet()->m_ReplyQ.pop())
 			{
-				if (ack->OrderRequest.OrdRequestType &\
+				if (ack->OrderRequest.OrdRequestType & \
 					static_cast<decltype(ack->OrderRequest.OrdRequestType)>(shared::SystemOrder::EnOrdRequestType::EN_ORD_REQUEST_TYPE_POSITION_ADJUST))
 				{
 					if (SKAPIRES_SUCCESS(ack->OrderRequest.SKRetcode))
@@ -333,7 +333,7 @@ namespace proxy {
 				TimeOld = TimeNow;
 			}
 
-			if (!Global::SharedGet()->m_MarketDataUpdateQ.empty()) 
+			if (!Global::SharedGet()->m_MarketDataUpdateQ.empty())
 			{
 				sk::packet quotes;
 				do {
@@ -353,7 +353,7 @@ namespace proxy {
 					FinalQuoteGet()->Push(*pMD);
 					//!@ ¾ÛºÏ±¨¼Û
 					if (Global::GetSetup()->SystemSetupGet().AggregateQuoteSwitch == \
-						shared::BridgeSystemSetup::EnAggregateQuoteSwitch::EN_AGGREGATE_QUOTE_FALG_ENABLE &&\
+						shared::BridgeSystemSetup::EnAggregateQuoteSwitch::EN_AGGREGATE_QUOTE_FALG_ENABLE && \
 						!pSystemProdcon->SetupEnable)
 					{
 						auto quote = FinalQuoteGet()->Get(pMD->ID);
@@ -518,11 +518,11 @@ namespace proxy {
 						);
 						Global::Log(sk::EnLogType::EN_LOG_TYPE_TRACE)->info(text);
 						of << text << std::endl;
-		});
+					});
 				of.close();
-	}
+			}
 #endif
-}break;
+		}break;
 
 		default:
 		{
