@@ -2,7 +2,6 @@
 // Microsoft Visual C++ 生成的包含文件。
 // 供 bridge.manager.rc 使用
 //
-#define IDI_ICON1                       101
 #define IDI_ICON                        101
 
 // Next default values for new objects

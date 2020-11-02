@@ -2,10 +2,7 @@
 // Microsoft Visual C++ 生成的包含文件。
 // 供 follow.manager.rc 使用
 //
-#define IDI_ICON1                       101
 #define IDI_ICON                        101
-#define IDR_ZIPRES1                     102
-#define IDR_SKIN                        102
 
 // Next default values for new objects
 // 

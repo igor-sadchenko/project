@@ -36,7 +36,7 @@ namespace client {
 				LPBYTE pBufferRes = nullptr;
 				CPaintManagerUI::SetInstance(extern_global_hinstance);
 #if defined(_DEBUG)
-#if 1
+#if 0
 				//! 从资源加载
 				HRSRC pResource = ::FindResource(CPaintManagerUI::GetResourceDll(), MAKEINTRESOURCE(IDR_SKIN), _T("SKINRES"));
 				if (pResource)

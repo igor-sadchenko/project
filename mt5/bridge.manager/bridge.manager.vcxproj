@@ -189,6 +189,9 @@
   <ItemGroup>
     <Image Include="..\..\..\resource\images\green_128px_1071302_easyicon.net.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\resource\images\skinres1.bin" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

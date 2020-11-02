@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Core.h"
+#include "resource.h"
 
 namespace client {
 
@@ -34,7 +35,13 @@ namespace client {
 			[this]()
 			{
 				CPaintManagerUI::SetInstance(extern_global_hinstance);
+#if 0
 				CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _TEXT("bridge.manager.skin"));
+#else
+				//! 从ZIP文件加载资源
+				CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath());
+				CPaintManagerUI::SetResourceZip(_TEXT("bridge.manager.skin"), false, _TEXT("www.skstu.com"));
+#endif
 				m_pClient = new UIClient();
 				m_pClient->Create(NULL, _TEXT("新生联创"), UI_WNDSTYLE_FRAME, 0L);
 				m_pClient->CenterWindow();

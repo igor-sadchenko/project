@@ -1040,10 +1040,17 @@ namespace client {
 			[&](const auto& sysProdID, shared::SystemProduct& sysProdObj)
 			{
 				auto pListLine = (IProductTreeNodeUI*)builder.Create(_T("UIProductTreeNode.xml"));
-				pList->Add(pListLine);
-				pListLine->SetTag((int)sysProdObj.Decimals);
-				pListLine->SetTagUINT64(sysProdID);
-				pListLine->SetSymbol(sk::StringConvert::MBytesToTString(sysProdObj.Symbol.symbol));
+				if (pListLine)
+				{
+					pList->Add(pListLine);
+					pListLine->SetTag((int)sysProdObj.Decimals);
+					pListLine->SetTagUINT64(sysProdID);
+					pListLine->SetSymbol(sk::StringConvert::MBytesToTString(sysProdObj.Symbol.symbol));
+				}
+				else
+				{
+					auto sk = 0;
+				}
 			});
 		if (pList->GetCount() && pList->GetCurSel() < 0)
 		{
