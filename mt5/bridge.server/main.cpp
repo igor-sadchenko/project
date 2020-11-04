@@ -29,7 +29,7 @@ int WINAPI wWinMain
 	proxy::FrameWnd* pFrameWnd = new proxy::FrameWnd(
 		hInstance,
 		hInstanceRes,
-		sk::Log::Format(L"清算桥系统® Proxy ***内部版本 - [{}]", \
+		sk::Log::Format(L"XS® Bridge Server ***Build - [{}]", \
 			sk::Helper::GetProgramVersion(sk::Helper::GetCurrentProcessName())));
 
 	pFrameWnd->CreateFrame(

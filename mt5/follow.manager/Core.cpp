@@ -57,8 +57,14 @@ namespace client {
 				CPaintManagerUI::SetResourceZip(_TEXT("follow.manager.skin"), false, _TEXT("www.skstu.com"));
 #endif
 #else
+#if 0
 				//! 正常加载资源
 				CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _TEXT("follow.manager.skin"));
+#else
+				//! 从ZIP文件加载资源
+				CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath());
+				CPaintManagerUI::SetResourceZip(_TEXT("follow.manager.skin"), false, _TEXT("www.skstu.com"));
+#endif
 #endif
 				m_pClient = new UIClient();
 				m_pClient->Create(NULL, _TEXT("新生联创"), UI_WNDSTYLE_FRAME, 0L);

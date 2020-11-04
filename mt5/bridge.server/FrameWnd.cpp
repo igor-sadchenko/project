@@ -655,12 +655,12 @@ namespace proxy {
 	FrameWnd::FrameWnd(HINSTANCE hInstance, HINSTANCE hInstanceRes, sk::string AppName, sk::string ClassName) :
 		sk::IWindowFrame(hInstance, hInstanceRes, AppName, ClassName)
 	{
-		//m_pServerPipe = new ServerPipe();
+
 	}
 
 	FrameWnd::~FrameWnd()
 	{
-		//SK_DELETE_PTR(m_pServerPipe);
+
 	}
 
 	LRESULT FrameWnd::OnFrameMessage(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam, BOOL bHandle)
@@ -675,7 +675,7 @@ namespace proxy {
 
 			RECT rtMainWnd;
 			::GetClientRect(m_hWnd, &rtMainWnd);
-			int	nStatusPartsWidths[4];
+			int nStatusPartsWidths[4];
 			int nCnt = 0;
 			int i;
 			for (i = 4 - 1; i >= 0; i--)
