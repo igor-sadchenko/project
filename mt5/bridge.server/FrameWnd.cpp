@@ -443,7 +443,7 @@ namespace proxy {
 					WS_EX_CLIENTEDGE,
 					WC_LISTVIEW,
 					_TEXT(""),
-					WS_BORDER | WS_CHILD | WS_VISIBLE | LVS_REPORT,
+					WS_BORDER | WS_CHILD | WS_VISIBLE | LVS_REPORT | WS_EX_COMPOSITED,
 					0,
 					0,
 					0,
