@@ -3,30 +3,6 @@
 
 namespace client {
 
-	class ChildWndStd : public sk::IWindowChild
-	{
-	public:
-		ChildWndStd(const long&, const HINSTANCE&, const HINSTANCE&, const sk::string&);
-		~ChildWndStd();
-	public:
-		void Release() const override final { delete this; }
-	protected:
-		LRESULT OnChildMessage(HWND, UINT, WPARAM, LPARAM, BOOL&) override final;
-		void DoPaint();
-	private:
-		BOOL GLUTSetupPixelFormat(const HDC&);
-		BOOL GLUTInit();
-		void GLUTChangeSize(const int&, const int&);
-	private:
-		HDC m_hDC = nullptr;
-		HDC m_hMemDC = nullptr;
-		HGLRC m_hGLRC = nullptr;
-	};
-
-
-
-
-
 
 }///namespace client
 

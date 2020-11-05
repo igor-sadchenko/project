@@ -13,8 +13,6 @@
 #include "common/libcef.hpp"
 
 #include "shared/shared.resource/dllexports.h"
-#include "common/window.h"
-
 
 #include "FrameWnd.h"
 
