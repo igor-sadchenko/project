@@ -21,9 +21,6 @@ namespace local {
 		{
 		case WM_CREATE:
 		{
-			m_Timer.Open();
-			m_Timer.TimerAppend(m_ServerStatusUpdateTimeinterval, this, OnTimer);
-
 			RECT rtMainWnd;
 			::GetClientRect(m_hWnd, &rtMainWnd);
 			int nStatusPartsWidths[4];
@@ -37,6 +34,8 @@ namespace local {
 			AppendChild(pChildDraw);
 			auto pChildWeb = new ChildWeb(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Web"));
 			AppendChild(pChildWeb);
+			auto pChildWork = new ChildWork(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Work"));
+			AppendChild(pChildWork);
 
 			CreateTaskBar(TEXT("桥系统服务®"));
 
@@ -157,7 +156,7 @@ namespace local {
 		}break;
 		case WM_CLOSE:
 		{
-			m_Timer.Close();
+
 		}break;
 		case WM_TASKBAR:
 		{
@@ -251,17 +250,6 @@ namespace local {
 		}break;
 		}///switch
 		return result;
-	}
-
-	int Frame::OnTimer(const sk::int64& interval, const sk::intptr& coreptr, const sk::int64& currtime)
-	{
-		auto pFrameWnd = reinterpret_cast<Frame*>(coreptr);
-		if (pFrameWnd->m_ServerStatusUpdateTimeinterval == interval && pFrameWnd->m_hStatusBar)
-		{
-			
-		}
-
-		return 0;
 	}
 
 

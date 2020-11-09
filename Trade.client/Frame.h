@@ -50,10 +50,6 @@ namespace local {
 		std::atomic_uint32_t m_OpenPort;//! 开放端口
 		volatile long m_Connention = 0;
 		std::atomic<EnServerStatus> m_ServerStatus = EnServerStatus::EN_SERVER_STATUS_STOP;
-
-		sk::Timer m_Timer;
-		static int OnTimer(const sk::int64&, const sk::intptr&, const sk::int64&);
-		const int m_ServerStatusUpdateTimeinterval = 3000;
 	};
 }
 

@@ -124,6 +124,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\cef;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -143,6 +144,8 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\cef;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\imgui\backends;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -150,12 +153,14 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)..\bin\lib\x64\Release;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BrowserHelper.cpp" />
+    <ClCompile Include="CefHelper.cpp" />
     <ClCompile Include="ChildWeb.cpp" />
     <ClCompile Include="ChildDraw.cpp" />
+    <ClCompile Include="ChildWork.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="Global.cpp" />
     <ClCompile Include="main.cpp">
@@ -169,9 +174,10 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BrowserHelper.h" />
+    <ClInclude Include="CefHelper.h" />
     <ClInclude Include="ChildWeb.h" />
     <ClInclude Include="ChildDraw.h" />
+    <ClInclude Include="ChildWork.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="resource.h" />

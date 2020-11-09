@@ -85,13 +85,13 @@ int _tmain(int argc, char* argv[])
 			{
 				for (int i = 0; i < 5; ++i)
 				{
-					manager::Global::CoreGet()->SystemGet()->UnLoadDllAt(_TEXT("mt5trade64.exe"), _TEXT("skapi.network.dll"));
+					manager::Global::CoreGet()->SystemGet()->UnLoadDllAt(_TEXT("mt5trade64.exe"), _TEXT("shared.network.dll"));
 					std::this_thread::sleep_for(std::chrono::milliseconds(100));
 				}
 
 				for (int i = 0; i < 5; ++i)
 				{
-					manager::Global::CoreGet()->SystemGet()->UnLoadDllAt(_TEXT("mt5history64.exe"), _TEXT("skapi.network.dll"));
+					manager::Global::CoreGet()->SystemGet()->UnLoadDllAt(_TEXT("mt5history64.exe"), _TEXT("shared.network.dll"));
 					std::this_thread::sleep_for(std::chrono::milliseconds(100));
 				}
 			}break;

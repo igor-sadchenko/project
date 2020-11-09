@@ -1,7 +1,8 @@
-﻿#if !defined(AFX_SK_H__7DA931DA_6361_4564_8387_943E341134E1__HEAD__)
-#define AFX_SK_H__7DA931DA_6361_4564_8387_943E341134E1__HEAD__
+﻿#if !defined(AFX_SK_H__A2B6A2BE_4394_42CF_85F7_E86ADDDF4740__HEAD__)
+#define AFX_SK_H__A2B6A2BE_4394_42CF_85F7_E86ADDDF4740__HEAD__
 
 namespace local {
+#if 0
 	// Implement application-level callbacks for the browser process.
 	class SimpleApp : public CefApp, public CefBrowserProcessHandler {
 	public:
@@ -79,10 +80,10 @@ namespace local {
 		// Include the default reference counting implementation.
 		IMPLEMENT_REFCOUNTING(SimpleHandler);
 	};
-
+#endif
 }///namespace local
 
 //!@ /*新生联创®（上海）*/
-//!@ /*Sun Nov 8 15:42:11 UTC+0800 2020*/
+//!@ /*Mon Nov 9 14:37:15 UTC+0800 2020*/
 //!@ /*___www.skstu.com___*/
-#endif /*AFX_SK_H__7DA931DA_6361_4564_8387_943E341134E1__HEAD__*/
+#endif /*AFX_SK_H__A2B6A2BE_4394_42CF_85F7_E86ADDDF4740__HEAD__*/
