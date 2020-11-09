@@ -774,6 +774,13 @@ namespace proxy {
 					Global::GetCore()->GetSystem()->ShowLPProcess();
 				}
 			}break;
+			case ID_COMMAND_40015:
+			{//!@ 控制交易所模块的显示/隐藏
+				if (Global::GetCore() && Global::GetCore()->GetSystem() && Global::GetCore()->GetSystem()->SymbolConGet())
+				{
+					Global::GetCore()->GetSystem()->SymbolConGet()->Reload();
+				}
+			}break;
 			}///switch
 		}break;
 		case WM_NOTIFY:
