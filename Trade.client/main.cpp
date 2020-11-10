@@ -147,6 +147,31 @@ int WINAPI wWinMain
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
+#if ENABLE_CEF
+	CefEnableHighDPISupport();
+	void* sandbox_info = nullptr;
+#if defined(CEF_USE_SANDBOX)
+	CefScopedSandboxInfo scoped_sandbox;
+	sandbox_info = scoped_sandbox.sandbox_info();
+#endif
+	CefMainArgs main_args(hInstance);
+	int exit_code = CefExecuteProcess(main_args, nullptr, sandbox_info);
+	if (exit_code >= 0) {
+		return exit_code;
+	}
+	CefRefPtr<CefCommandLine> command_line = CefCommandLine::CreateCommandLine();
+	command_line->InitFromString(::GetCommandLineW());
+	CefSettings settings;
+	if (command_line->HasSwitch("enable-chrome-runtime")) { settings.chrome_runtime = true; }
+#if !defined(CEF_USE_SANDBOX)
+	settings.no_sandbox = true;
+#endif
+    local::gpCefApp = new local::SimpleApp;
+	//settings.multi_threaded_message_loop = true;
+	CefInitialize(main_args, settings, local::gpCefApp.get(), sandbox_info);
+#endif
+
+
 #if defined(_DEBUG)
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
     /*_CrtSetBreakAlloc(743045);*/
@@ -166,6 +191,7 @@ int WINAPI wWinMain
    // hInstanceRes = ::LoadLibraryA((local::Global::GetSetup()->GetApiPath() + "shared.resource.dll").c_str());
 #endif
     local::ghInstance = hInstance;
+
     local::Frame* pFrameWnd = new local::Frame(
         hInstance,
         hInstanceRes,
@@ -181,7 +207,12 @@ int WINAPI wWinMain
 
     );
 
+#if ENABLE_CEF
+    CefRunMessageLoop();
+    CefShutdown();
+#else
     pFrameWnd->MessageLoop();
+#endif
 
     {
         ::SetConsoleTextAttribute(::GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_INTENSITY);

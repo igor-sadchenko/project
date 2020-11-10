@@ -11,11 +11,9 @@ namespace local {
 		int Init() override final;
 		int UnInit() override final;
 	public:
-		static Window* WindowGet();
 		static bool SystemExit();
 		static void SystemExit(const bool&);
 	private:
-		Window* m_pWindow = nullptr;
 		std::vector<std::thread> m_Threads;
 		std::atomic_bool m_SystemExit = false;
 	};
@@ -23,6 +21,9 @@ namespace local {
 	extern HINSTANCE ghInstance;
 	extern Global* gpGlobal;
 	Global* GlobalGet();
+#if ENABLE_CEF
+	extern CefRefPtr<local::SimpleApp> gpCefApp;
+#endif
 }///namespace local
 
 

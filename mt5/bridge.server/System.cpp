@@ -360,36 +360,15 @@ namespace proxy {
 						pMD->PriceBidFinal = quote.Bid.Price;
 						pMD->PriceOfferFinal = quote.Ask.Price;
 					}
-
-					//!@ 转换成对手价
-#if 0
-					pMD->PriceOfferFinal = pMD->PriceOfferFinal + pMD->PriceBidFinal;
-					pMD->PriceBidFinal = pMD->PriceOfferFinal - pMD->PriceBidFinal;
-					pMD->PriceOfferFinal = pMD->PriceOfferFinal - pMD->PriceBidFinal;
-#endif
-
 					Global::SharedGet()->m_MarketDataFinalQ.push(shared::SystemIDType::SystemProductType(pMD->ID), *pMD);
-
 					if (pSystemProdcon->SetupEnable)
 					{
 						sk::container::set<shared::SystemID> assigns;
 						shared::ProductCon::UnMadeSystemSetup(pSystemProdcon->Setup, assigns);
-
 						if (assigns.search(shared::SystemIDType::ExchangeType(pMD->ID)))
 						{
 							quotes.append((char*)pMD.get(), shared::marketdata::LENMARKETDATA);
 						}
-#if 0
-						else
-						{
-							Global::Log(sk::EnLogType::EN_LOG_TYPE_TRACE)->warn(
-								"系统产品({}),报价交易所({:X}) 价格(Offer({}),Bid({}))已被过滤",
-								pMD->Symbol.symbol,
-								shared::SystemIDType::ExchangeType(pMD->ID),
-								pMD->PriceOfferFinal,
-								pMD->PriceBidFinal);
-						}
-#endif
 					}
 					else
 						quotes.append((char*)pMD.get(), shared::marketdata::LENMARKETDATA);

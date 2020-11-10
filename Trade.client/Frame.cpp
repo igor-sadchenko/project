@@ -32,8 +32,10 @@ namespace local {
 
 			auto pChildDraw = new ChildDraw(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Draw"));
 			AppendChild(pChildDraw);
+#if ENABLE_CEF
 			auto pChildWeb = new ChildWeb(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Web"));
 			AppendChild(pChildWeb);
+#endif
 			auto pChildWork = new ChildWork(ChildID(), m_hInstance, m_hInstanceRes, TEXT("Work"));
 			AppendChild(pChildWork);
 
@@ -209,7 +211,6 @@ namespace local {
 		}break;
 		case WM_DESTROY:
 		{
-
 			//m_pServerPipe->Close();
 		}break;
 		case WM_HOTKEY:

@@ -3,19 +3,6 @@
 
 namespace local {
 
-	class CefChildWindow : sk::object::IObject
-	{
-	public:
-		CefChildWindow();
-		~CefChildWindow();
-	private:
-		int Init() override final;
-		int UnInit() override final;
-	public:
-		int Open() override final;
-		int Close() override final;
-	};
-
 	class ChildWeb : public sk::IWindowChild
 	{
 	public:
@@ -25,6 +12,8 @@ namespace local {
 		void Release() const override final { delete this; }
 	protected:
 		LRESULT OnChildMessage(HWND, UINT, WPARAM, LPARAM, BOOL&) override final;
+	private:
+		std::vector<std::thread> m_Threads;
 	};
 
 

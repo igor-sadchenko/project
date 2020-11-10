@@ -10,7 +10,6 @@
 
 #define DRIVER_GLUT_GL2
 #include "common/imgui.hpp"
-//#include "common/libcef.hpp"
 #if !defined(DRIVER_GLUT_GL2)
 #include "common/glut.hpp"
 #endif
@@ -22,7 +21,12 @@
 #include "shared/shared.resource/dllexports.h"
 #include "common/window.h"
 
-//#include "CefHelper.h"
+#if ENABLE_CEF
+#include "common/libcef.hpp"
+#include "CefHelper.h"
+#endif
+
+
 #include "ChildDraw.h"
 #include "ChildWeb.h"
 #include "ChildWork.h"
