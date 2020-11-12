@@ -20,10 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{9C86E08B-A804-4A14-82D0-4EC1D7295EC3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0f0b452f-5a2d-442b-90b7-a75907b28129}</ProjectGuid>
-    <RootNamespace>Tradeclient</RootNamespace>
+    <RootNamespace>load</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Trade.server</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,14 +73,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\bin\project\trade\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\obj\project\trade\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,10 +93,33 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir).\Common\Gpl\spdlog\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -100,12 +128,18 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir).\Common\Gpl\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,103 +148,51 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\cef86021;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\bin\lib\x64\debug;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)..\Gpl\cef86021\lib\Debug\libcef.lib;$(SolutionDir)..\bin\lib\x64\Debug\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;$(SolutionDir)..\Gpl\cef86021\lib\Debug\cef_sandbox.lib;dbghelp.lib;Delayimp.lib;PowrProf.lib;Propsys.lib;psapi.lib;SetupAPI.lib;version.lib;wbemuuid.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <IgnoreSpecificDefaultLibraries>
-      </IgnoreSpecificDefaultLibraries>
-    </Link>
-    <PostBuildEvent>
-      <Command>setlocal
-mt.exe -nologo -manifest "$(SolutionDir)../gpl/cef86021/tests/cefsimple/cefsimple.exe.manifest" "$(SolutionDir)../gpl/cef86021/tests/cefsimple/compatibility.manifest" -outputresource:"$(OutDir)/$(TargetName)$(TargetExt)";#1
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <Message>Enable CEF Module . . .</Message>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\cef86021;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\bin\lib\x64\Release;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)..\Gpl\cef86021\lib\Release\libcef.lib;$(SolutionDir)..\bin\lib\x64\Release\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;$(SolutionDir)..\Gpl\cef86021\lib\Release\cef_sandbox.lib;dbghelp.lib;Delayimp.lib;PowrProf.lib;Propsys.lib;psapi.lib;SetupAPI.lib;version.lib;wbemuuid.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>setlocal
-mt.exe -nologo -manifest "$(SolutionDir)../gpl/cef86021/tests/cefsimple/cefsimple.exe.manifest" "$(SolutionDir)../gpl/cef86021/tests/cefsimple/compatibility.manifest" -outputresource:"$(OutDir)/$(TargetName)$(TargetExt)";#1
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CefHelper.cpp" />
-    <ClCompile Include="ChildWeb.cpp" />
-    <ClCompile Include="ChildDraw.cpp" />
-    <ClCompile Include="ChildWork.cpp" />
-    <ClCompile Include="Frame.cpp" />
-    <ClCompile Include="Global.cpp" />
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Global.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="Setup.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CefHelper.h" />
-    <ClInclude Include="ChildWeb.h" />
-    <ClInclude Include="ChildDraw.h" />
-    <ClInclude Include="ChildWork.h" />
-    <ClInclude Include="Frame.h" />
+    <ClInclude Include="Core.h" />
     <ClInclude Include="Global.h" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="Setup.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Trade.client.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
