@@ -14,10 +14,16 @@
 #include "common/glut.hpp"
 #endif
 
+#include "gpl/rapidxml/rapidxml.hpp"
+#include "gpl/rapidxml/rapidxml_iterators.hpp"
+#include "gpl/rapidxml/rapidxml_print.hpp"
+#include "gpl/rapidxml/rapidxml_utils.hpp"
+
+
 #include "common/duilib.hpp"
 
 #include "shared/shared.hpp"
-#include "shared/shared.network/dllexports.hpp"
+#include "shared/shared.fix/dllexports.h"
 #include "shared/shared.resource/dllexports.h"
 #include "common/window.h"
 
@@ -27,11 +33,16 @@
 #endif
 
 
+
 #include "ChildDraw.h"
 #include "ChildWeb.h"
 #include "ChildWork.h"
 #include "Frame.h"
 #include "Window.h"
+
+#include "Setup.h"
+#include "Client.h"
+#include "Core.h"
 #include "Global.h"
 
 

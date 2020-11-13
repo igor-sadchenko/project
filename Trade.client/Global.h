@@ -13,14 +13,19 @@ namespace local {
 	public:
 		static bool SystemExit();
 		static void SystemExit(const bool&);
+		static Core* CoreGet();
+		static Setup* SetupGet();
+		static shared::SharedApi* SharedApi();
 	private:
 		std::vector<std::thread> m_Threads;
 		std::atomic_bool m_SystemExit = false;
+		Core* m_pCore = nullptr;
+		Setup* m_pSetup = nullptr;
+		shared::SharedApi* m_pSharedApi = nullptr;
 	};
 
 	extern HINSTANCE ghInstance;
-	extern Global* gpGlobal;
-	Global* GlobalGet();
+	extern Global* GlobalGet();
 #if ENABLE_CEF
 	extern CefRefPtr<local::SimpleApp> gpCefApp;
 #endif

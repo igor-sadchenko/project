@@ -118,7 +118,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\cef86021;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
@@ -153,7 +153,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;FREEGLUT_STATIC;ENABLE_CEF=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)..\;$(SolutionDir)..\Gpl\spdlog\include;$(SolutionDir)..\Gpl\cef86021;$(SolutionDir)..\Gpl\imgui;$(SolutionDir)..\Gpl\freeglut\include</AdditionalIncludeDirectories>
@@ -186,12 +186,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="ChildWeb.cpp" />
     <ClCompile Include="ChildDraw.cpp" />
     <ClCompile Include="ChildWork.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Core.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="Global.cpp" />
     <ClCompile Include="main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Setup.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -203,9 +206,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="ChildWeb.h" />
     <ClInclude Include="ChildDraw.h" />
     <ClInclude Include="ChildWork.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="Core.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Setup.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

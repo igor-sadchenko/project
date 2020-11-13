@@ -1,23 +1,23 @@
 ﻿#include "stdafx.h"
-#include "Server.h"
+#include "Client.h"
 
 namespace local {
 
-	Server::Server()
+	Client::Client()
 	{
 		Init();
 	}
 
-	Server::~Server()
+	Client::~Client()
 	{
 		UnInit();
 	}
 
-	int Server::Init()
+	int Client::Init()
 	{
 		std::intptr_t fixapiptr = 0;
-		if (Global::SharedApiGet()->GetFunction<shared::tf_api_fix_setup>(shared::api_fix, shared::api_fix_setup)(
-			Global::SetupGet()->FixObjAcceptorPathname().c_str(), std::uint64_t(fix::EnFixMode::EN_FIX_MODE_ACCEPTOR),
+		if (Global::SharedApi()->GetFunction<shared::tf_api_fix_setup>(shared::api_fix, shared::api_fix_setup)(
+			Global::SetupGet()->FixObjInitiatorPathname().c_str(), std::uint64_t(fix::EnFixMode::EN_FIX_MODE_INITIATOR),
 			fixapiptr))
 		{
 			return -1;
@@ -26,23 +26,23 @@ namespace local {
 		return 0;
 	}
 
-	int Server::UnInit()
+	int Client::UnInit()
 	{
 		FixApi()->Release();
 		return 0;
 	}
 
-	int Server::Open()
+	int Client::Open()
 	{
 		if (m_IsOpen.load()) return 0;
 
 		FixApi()->Start(this);
-		
+
 		m_IsOpen.store(true);
 		return 0;
 	}
 
-	int Server::Close()
+	int Client::Close()
 	{
 		if (!m_IsOpen.load()) return 0;
 

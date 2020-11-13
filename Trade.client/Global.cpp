@@ -2,15 +2,15 @@
 #include "Global.h"
 
 namespace local {
-	Global* gpGlobal = nullptr;
+	static Global gGlobal;
 	HINSTANCE ghInstance = nullptr;
-	Global* GlobalGet() { return gpGlobal; }
+	Global* GlobalGet() { return &gGlobal; }
 #if ENABLE_CEF
 	CefRefPtr<local::SimpleApp> gpCefApp;
 #endif
 	Global::Global()
 	{
-		Init();
+		if (Init()) { sk::Helper::ErrorFatal(__FUNCTION__, nullptr, "%s", "Module initialize failed !"); }
 	}
 
 	Global::~Global()
@@ -20,19 +20,56 @@ namespace local {
 
 	int Global::Init()
 	{
+		m_pSetup = new Setup();
+
+		m_pSharedApi = new shared::SharedApi(
+			nullptr,
+			shared::EnApiLoadFlag::EN_API_LOAD_FLAG_FIX,
+			R"(..\..\bin\shared\x64\debug\)"
+		);
+
+		m_pCore = new Core();
 		return 0;
 	}
 
 	int Global::UnInit()
 	{
+		SK_DELETE_PTR(m_pCore);
+		SK_DELETE_PTR(m_pSetup);
+		SK_DELETE_PTR(m_pSharedApi);
 		return 0;
 	}
+
+	Core* Global::CoreGet()
+	{
+		return GlobalGet()->m_pCore;
+	}
+
+	Setup* Global::SetupGet()
+	{
+		return GlobalGet()->m_pSetup;
+	}
+
+	shared::SharedApi* Global::SharedApi()
+	{
+		return GlobalGet()->m_pSharedApi;
+	}
+
+
+
+
+
+
+
+
+
+
 	bool Global::SystemExit()
 	{
-		return gpGlobal ? gpGlobal->m_SystemExit.load() : false;
+		return GlobalGet() ? GlobalGet()->m_SystemExit.load() : false;
 	}
 	void Global::SystemExit(const bool& flag)
 	{
-		gpGlobal->m_SystemExit.store(flag);
+		GlobalGet()->m_SystemExit.store(flag);
 	}
 }///namespace local

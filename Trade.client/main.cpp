@@ -47,12 +47,11 @@ int WINAPI wWinMain
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-
+#if 0
     std::thread out;
     auto aldfkj = resuming_on_new_thread(out);
-
     auto sk = 0;
-
+#endif
 
 
 
@@ -106,11 +105,16 @@ int WINAPI wWinMain
 #endif
     local::ghInstance = hInstance;
 
+    //auto CoInitializeResult = ::CoInitialize(NULL);
+    //::CoUninitialize();
+
     local::Frame* pFrameWnd = new local::Frame(
         hInstance,
         hInstanceRes,
         sk::Log::Format(L"XS® Bridge Server ***Build - [{}]", \
             sk::Helper::GetProgramVersion(sk::Helper::GetCurrentProcessName())));
+
+    local::Global::CoreGet()->Open();
 
     pFrameWnd->CreateFrame(
         {
@@ -127,6 +131,8 @@ int WINAPI wWinMain
 #else
     pFrameWnd->MessageLoop();
 #endif
+
+    local::Global::CoreGet()->Close();
 
     {
         ::SetConsoleTextAttribute(::GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_INTENSITY);
